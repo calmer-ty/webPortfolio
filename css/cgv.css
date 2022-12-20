@@ -1,0 +1,355 @@
+#container {
+  color: #222;
+}
+.slide-main {
+  background-color: #000;
+  text-align: center;
+}
+
+/* CONT - COMMON */
+.cont {
+  padding: 60px 0;
+}
+.cont .inner,
+.cont2 .inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+.cont-top {
+  margin-bottom: 25px;
+}
+.cont-top::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cont-top h3 {
+  float: left;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cont-top a {
+  float: right;
+  display: block;
+  padding: 0 10px;
+  padding-left: 10px;
+  padding-right: 3px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+.cont-top a span {
+  float: left;
+  display: block;
+  line-height: 1.7;
+}
+.cont ul[class^="list"],
+.cont2 ul[class^="list"] {
+  margin: 0 -20px;
+}
+.cont ul[class^="list"]::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cont ul[class^="list"] li {
+  float: left;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.cont ul[class^="list"] li figure img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+}
+.cont-bot .thumb {
+  position: relative;
+}
+.cont-bot .box-details {
+  position: absolute;
+  content: "";
+  /* display: none; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  /* background-color: #000; */
+  /* opacity: 0.3; */
+}
+.cont-bot .thumb:hover .box-details {
+  display: block;
+  margin: auto;
+}
+.cont-bot .box-details a {
+  /* position: absolute; */
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+.cont-bot figcaption {
+  padding: 15px 0;
+}
+.cont-bot figcaption h5 {
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* CONT - CHART */
+.cont.chart {
+  background-color: #eee;
+}
+.cont.chart .tab-movie li {
+  float: left;
+  margin-right: 20px;
+  font-size: 1.7rem;
+}
+.cont.chart .tab-movie li.on {
+  font-weight: 700;
+}
+.cont.chart ul[class^="list"] li {
+  width: 20%;
+}
+.cont.chart .cont-bot li figcaption {
+  text-align: center;
+}
+.cont.chart .cont-bot li figcaption .desc-movie {
+  font-size: 0.9rem;
+}
+.cont.chart .cont-bot li figcaption .sug {
+  display: inline-block;
+}
+.cont.chart .cont-bot li figcaption .sug img {
+  height: 16px;
+  vertical-align: top;
+}
+
+/* CONT - EVENT */
+.cont.event ul[class^="list"] li {
+  width: 33.3%;
+}
+
+/* CONT - SPECIAL */
+.cont.special .cont-bot {
+  margin: 0 -20px;
+}
+.cont.special .cont-bot > * {
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.cont.special .list-right {
+  height: 250px;
+}
+.cont.special .list-right li {
+  height: 25%;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.cont.special .list-right li:last-of-type {
+  border-bottom: 1px solid #ccc;
+}
+.cont.special .list-right li a {
+  display: block;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.cont.special .list-right li h5 {
+  float: left;
+  font-size: 1.3rem;
+  letter-spacing: -0.04rem;
+}
+.cont.special .list-right li .desc {
+  float: right;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: #eee;
+}
+
+/* CONT - GITCON */
+.cont2.giftcon .wrap-list {
+  float: left;
+  width: 33.3%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.cont2.giftcon .list-giftcon {
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.cont2.giftcon .list-giftcon::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cont2.giftcon dt {
+  margin-bottom: 20px;
+}
+.cont2.giftcon dt::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cont2.giftcon dt h5 {
+  float: left;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.cont2.giftcon dt a {
+  float: right;
+  font-size: 0.8rem;
+  padding: 5px 15px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+}
+.cont2.giftcon dd {
+  padding: 10px 0;
+}
+.cont2.giftcon dd a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cont2.giftcon dd .thumb-giftcon {
+  float: left;
+  width: 25%;
+}
+.cont2.giftcon dd .thumb-giftcon img {
+  width: 100%;
+}
+.cont2.giftcon dd .desc-giftcon {
+  float: right;
+  width: 75%;
+  padding: 24px 10px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.cont2.giftcon dd .desc-giftcon span {
+  display: block;
+}
+.cont2.giftcon dd .desc-giftcon span:first-of-type {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.cont2.notice .inner {
+  height: 230px;
+}
+.cont2.notice .inner > [class^="cont"] {
+  height: 100%;
+}
+.cont2.notice .cont-left {
+  float: left;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+.cont2.notice .box-info {
+  float: left;
+  padding: 10px 20px;
+}
+.cont2.notice .box-info > *::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cont2.notice .box-info dl {
+  padding: 20px 0;
+}
+.cont2.notice .box-info dl > * {
+  float: left;
+}
+.cont2.notice .box-info dt {
+  margin-right: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.cont2.notice .box-info dd p {
+  font-size: 0.9rem;
+  letter-spacing: -0.04rem;
+}
+
+.cont2.notice .box-info .notice {
+  border-bottom: 1px solid #eee;
+  line-height: 1.5;
+}
+.cont2.notice .box-info .notice dd p {
+  float: left;
+  /* max-width: 300px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cont2.notice .box-info .notice dd a {
+  float: right;
+  font-size: 0.8rem;
+  padding: 1px 13px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+}
+.cont2.notice .box-info .service-center dd > * {
+  margin-bottom: 5px;
+}
+.cont2.notice .box-info .service-center dd .tel {
+  font-weight: 700;
+}
+.cont2.notice .box-info .service-center dd .desc {
+  color: #666;
+}
+.cont2.notice .box-info .btn-service {
+  padding: 10px 0;
+}
+.cont2.notice .box-info .btn-service a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  font-size: 0.9rem;
+}
+.cont2.notice .box-qr {
+  float: right;
+  padding: 30px 20px;
+  border-left: 1px solid #eee;
+  text-align: center;
+}
+.cont2.notice .box-qr h5 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.cont2.notice .box-qr img {
+  width: 60px;
+  margin: 20px;
+}
+.cont2.notice .box-qr p {
+  font-size: 0.8rem;
+}
+.cont2.notice .box-qr .desc-bot p {
+  color: #666;
+  line-height: 1.2;
+}
+
+.cont2.notice .cont-right {
+  float: right;
+  height: 240px;
+  background-color: #ccc;
+}
+.cont2.notice .cont-right a {
+  display: block;
+  height: 100%;
+}
+.cont2.notice .cont-right a img {
+  height: 100%;
+}

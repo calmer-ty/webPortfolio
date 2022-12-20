@@ -1,0 +1,543 @@
+.top-tit h2{
+	font-size: 22px;
+	margin-bottom: 20px;
+	letter-spacing: -0.6px;
+} .top-tit h3{
+	font-size: 40px;
+	margin-bottom: 50px;
+	letter-spacing: -0.6px;
+}
+
+.tit-box h2{
+	font-size: 22px;
+	margin-bottom: 20px;
+} .tit-box h3{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.cont .item li .txt{
+	padding: 20px 7% 0 0;
+} .cont .item li .txt h4{
+	font-size: 18px;
+	margin-bottom: 10px;
+} .cont .item li .txt p{
+	line-height: 1.7;
+}
+
+.inner{
+	padding: 0 100px;
+	transition: padding .5s;
+}
+
+.slider{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+} .slider .item{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	opacity: 0;
+	z-index: 0;
+	transition: opacity .5s;
+}
+.slider .item:first-child{
+	background: url("../img/slide-1.png") center/cover fixed;
+} .slider .item:nth-child(2){
+	background: url("../img/slide-2.png") center/cover fixed;
+}
+.slider .item:nth-child(2) h2{
+	position: absolute;
+	left: 100px;
+	top: 300px;
+	font-size: 40px;
+}
+.slider .item.active {
+	display: block;
+	-opacity: 1;
+	z-index: 1;
+}
+
+
+
+section{
+	position: relative;
+}
+
+section.tech{
+	padding: 200px 0 100px;
+} section.tech .visual .img-box{
+	position: relative;
+	left: calc(0% - (100vw - 1200px)/2);
+	width: calc(100% + (100vw - 1200px)/2);
+	height: 550px;
+} section.tech .visual .img-box .img{
+	width: 100%;
+	height: 100%;
+	background: url("../img/tech-visual.png") center/cover;
+} section.tech .visual .txt-box{
+	position: relative;
+	padding: 7% 0 0 8.5%;
+	margin-top: -120px;
+	background-color: #fff;
+	transition: padding .5s;
+} section.tech .visual .txt-box h3{
+	transition: font-size .5s;
+} section.tech .visual .txt-box .link{
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 10px;
+	transition: color .5s;
+} section.tech .visual .txt-box .link:hover{
+	color: gold;
+}
+
+section.tech .cont ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	margin-left: 7.5%;
+} section.tech .cont ul li{
+	width: calc(50% - 30px);
+	margin: 60px 15px 0 15px;
+} section.tech .cont li .img{
+	display: block;
+} section.tech .cont ul li .img:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 60%;
+}
+section.tech .cont li:first-child .img{
+	background: url("../img/tech-1.png") center/cover;
+} section.tech .cont li:nth-child(2) .img{
+	background: url("../img/tech-2.png") center/cover;
+} section.tech .cont li:nth-child(3) .img{
+	background: url("../img/tech-3.png") center/cover;
+} section.tech .cont li:nth-child(4) .img{
+	background: url("../img/tech-4.png") center/cover;
+} 
+
+
+section.service{
+	padding: 100px 0;
+} section.service .cont{
+	display: flex;
+} section.service .cont .tab{
+	width: 170px;
+	border-top: 2px solid #000;
+	margin-right: 50px;
+} section.service .cont .tab li{
+	padding: 30px 0;
+	width: 170px;
+	border-bottom: 1px solid #ddd;
+} section.service .cont .tab li a{
+	font-size: 19px;
+	transition: color .5s;
+}
+
+section.service .cont .item-box{
+	overflow: hidden;
+	position: relative;
+} section.service .cont .item{
+	display: none;
+} section.service .cont .item li{
+	width: 300px;
+	margin: 0 15px;
+	position: relative;
+    left: 0;
+    transition: left .8s, right .8s;
+} section.service .cont .item li .img{
+	display: block;
+	width: 300px;
+}
+section.service .cont .item-box .item.fir li:first-child .img{
+	background: url("../img/tab1-1.jpg") center/cover;
+} section.service .cont .item-box .item.fir li:nth-child(2) .img{
+	background: url("../img/tab1-2.jpg") center/cover;
+} section.service .cont .item-box .item.fir li:nth-child(3) .img{
+	background: url("../img/tab1-3.jpg") center/cover;
+} section.service .cont .item-box .item.fir li:nth-child(4) .img{
+	background: url("../img/tab1-4.jpg") center/cover;
+} section.service .cont .item-box .item.fir li:nth-child(5) .img{
+	background: url("../img/tab1-5.jpg") center/cover;
+} section.service .cont .item-box .item.fir li:nth-child(6) .img{
+	background: url("../img/tab1-6.jpg") center/cover;
+}
+
+section.service .cont .item-box .item.sec li:first-child .img{
+	background: url("../img/tab2-1.jpg") center/cover;
+} section.service .cont .item-box .item.sec li:nth-child(2) .img{
+	background: url("../img/tab2-2.jpg") center/cover;
+} section.service .cont .item-box .item.sec li:nth-child(3) .img{
+	background: url("../img/tab2-3.jpg") center/cover;
+} section.service .cont .item-box .item.sec li:nth-child(4) .img{
+	background: url("../img/tab2-4.jpg") center/cover;
+} section.service .cont .item-box .item.sec li:nth-child(5) .img{
+	background: url("../img/tab2-5.jpg") center/cover;
+} section.service .cont .item-box .item.sec li:nth-child(6) .img{
+	background: url("../img/tab2-6.jpg") center/cover;
+}
+
+section.service .cont .item-box .item.thi li:first-child .img{
+	background: url("../img/tab3-1.jpg") center/cover;
+} section.service .cont .item-box .item.thi li:nth-child(2) .img{
+	background: url("../img/tab3-2.jpg") center/cover;
+} section.service .cont .item-box .item.thi li:nth-child(3) .img{
+	background: url("../img/tab3-3.jpg") center/cover;
+} section.service .cont .item-box .item.thi li:nth-child(4) .img{
+	background: url("../img/tab3-4.jpg") center/cover;
+} section.service .cont .item-box .item.thi li:nth-child(5) .img{
+	background: url("../img/tab3-5.jpg") center/cover;
+} section.service .cont .item-box .item.thi li:nth-child(6) .img{
+	background: url("../img/tab3-6.jpg") center/cover;
+}
+/* 이펙트 */
+section.service .cont .item.active{
+	display: flex;
+	margin: 0 -15px;
+} section.service .cont .item li .img:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+} section.service .cont .tab li a:hover{
+	color: gold;
+}
+
+
+section.service .btn{
+    font-size: 60px;
+    font-weight: bold;
+    color: gold;
+    cursor: pointer;
+    z-index: 1;
+	position: absolute;
+} section.service .btn:first-child{
+	top: 360px;
+	left: 290px;
+	transition: top .5s, bottom .5s;
+} section.service .btn:nth-child(2){
+	top: 360px;
+	right: 70px;
+}
+
+
+
+section.news{
+	margin: 100px 0;
+} section.news.visual-img{
+	background: url("../img/news.png") center/cover;
+	height: 800px;
+} section.news .txt-box{
+	position: absolute;
+	margin-left: 15%;
+	padding: 70px 100px 130px 100px;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+} section.news .txt-box p{
+	line-height: 1.7;
+}
+
+
+section.social{
+	padding: 100px 0;
+} section.social .cont .item{
+	display: flex;
+	overflow-x: hidden;
+	margin: 0 -15px;
+} section.social .cont .item li{
+	position: relative;
+    left: 0;
+    transition: left .8s, right .8s;
+	margin: 0 15px;
+}
+
+section.social .cont .item .img{
+	display: block;
+	width: 450px;
+} section.social .cont .item li .img:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 60%;
+}
+section.social .cont .item li:first-child .img{
+	background: url("../img/social-1.png") center/cover;
+} section.social .cont .item li:nth-child(2) .img{
+	background: url("../img/social-2.png") center/cover;
+} section.social .cont .item li:nth-child(3) .img{
+	background: url("../img/social-3.png") center/cover;
+} section.social .cont .item li:nth-child(4) .img{
+	background: url("../img/social-4.png") center/cover;
+} section.social .cont .item li:nth-child(5) .img{
+	background: url("../img/social-5.png") center/cover;
+} section.social .cont .item li:nth-child(6) .img{
+	background: url("../img/social-6.png") center/cover;
+}
+
+section.social .btn{
+	position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: gold;
+    cursor: pointer;
+    z-index: 1;
+	transition: top .5s, bottom .5s;
+} section.social .btn:first-child{
+	top: 240px;
+	left: 70px;
+} section.social .btn:nth-child(2){
+	top: 240px;
+	right: 55px;
+}
+
+
+
+section.inquiry{
+	display: flex;
+	height: 300px;
+	margin: 50px 0 20px;
+	background: url("../img/inquiry.jpg") center/cover rgba(0, 0, 0, 0.5) ;	
+} section.inquiry::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+} section.inquiry .txt-box{
+	position: absolute;
+	display: inline;
+	width: 300px;
+	text-align: center;
+	top: calc(50% - 65px);
+	left: calc(50% - 150px);
+} section.inquiry .txt-box h2{
+	color: #fff;
+	margin-bottom: 10px;
+} section.inquiry .txt-box p{
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 20px;
+} section.inquiry .txt-box a{
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+}
+
+
+footer{
+	padding: 20px 0;
+} footer .top .main-menu{
+	display: flex;
+	justify-content: space-between;
+} footer .top .main-menu > li{
+	width: 100px;
+	font-size: 15px;
+
+} footer .top .main-menu > li.narrow{
+	width: 80px;
+}
+
+footer .top .sub-menu li{
+	padding: 7px 0;
+} footer .top .sub-menu li a{
+	font-size: 14px;
+	color: #aaa;
+}
+
+footer .bot ul{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+} footer .bot ul li a{
+	font-size: 13px;
+	color: #aaa;
+} footer .bot ul li a.bk{
+	color: #000;
+} footer .bot .copyright{
+	margin-top: 15px;
+	font-size: 14px;
+	color: #aaa;
+}
+
+
+
+/* PC (해상도 1500px)*/ 
+@media screen and (max-width: 1500px){
+	section.tech .visual .img-box {
+		left: -100px;
+		width: calc(100% + 100px);
+	}
+}
+
+
+@media screen and (max-width:1080px) {
+	.inner{
+		padding: 0 50px;
+	}
+
+	section.service .btn:first-child{
+		left: 240px;
+	} section.service .btn:nth-child(2){
+		right: 20px;
+	
+	}
+
+	section.social .btn:first-child{
+		left: 20px;
+	} section.social .btn:nth-child(2){
+		right: 5px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.icon{
+		display: block;
+	} .icon.hide{
+		display: none;
+	}
+
+	.inner{
+		padding: 0 30px;
+	}
+
+	.top-tit h2{
+		font-size: 14px;
+	} .top-tit h3{
+		font-size: 24px;
+		margin-bottom: 0;
+		height: 70px;
+	}
+
+
+	.tit-box h2{
+		font-size: 14px;
+		margin-bottom: 10px;
+	} .tit-box h3{
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+
+	.cont .item li .txt h4{
+		font-size: 16px;
+	} .cont .item li .txt p{
+		font-size: 14px;
+		line-height: 1.8;
+	} .cont .item li .txt{
+		padding: 20px 0 0 2%;
+	}
+
+	section .btn-group .btn{
+		font-size: 40px;
+	}
+
+
+	section.tech .visual .txt-box {
+		padding: 10% 0 0 10%;
+		margin-left: -30px;
+	} section.tech .cont ul {
+		margin: 60px 0 0 0;
+	} section.tech .cont ul li {
+		width: 100%;
+		margin: 0 0 60px 0;
+	}
+
+
+	section.service .cont {
+		display: block;
+	} section.service .cont .tab {
+		display: flex;
+		width: 300px;
+		margin-bottom: 20px;
+		border: 0;
+	} section.service .cont .tab li{
+		width: 100px;
+		padding: 20px 0;
+		border-bottom: 0;
+		text-align: center;
+	} section.service .cont .tab li:nth-child(3){
+		width: 70px;
+	} section.service .cont .tab li a{
+		font-size: 16px;
+	}
+
+	section.service .btn:first-child{
+		top: 400px;
+		left: 40px;
+	} section.service .btn:nth-child(2){
+		top: 400px;
+		right: 40px;
+	
+	}
+
+
+	section.news .txt-box{
+		position: absolute;
+		margin-left: 15%;
+		padding: 70px 50px 130px 50px;
+		right: 0;
+		bottom: 0;
+		background-color: #fff;
+	}
+
+
+	section.social .cont .item .img{
+		width: 300px;
+	} section.social .cont .item li .txt h4{
+		height: 48px;
+	}
+
+	section.social .btn:first-child{
+		top: 200px;
+		left: 40px;
+	} section.social .btn:nth-child(2){
+		top: 200px;
+		right: 40px;
+	}
+
+
+	section.inquiry .txt-box p{
+		font-size: 14px;
+	}
+
+	footer .top .main-menu{
+		display: block;
+		margin: 0;
+	} footer .top .main-menu .list{
+		width: 100%;
+		padding: 15px 0;
+		margin: 0;
+		border-bottom: 1px solid #ddd;
+	} footer .top .main-menu .list.narrow{
+		width: 100%;
+	} footer .top .main-menu .list .tit{
+		display: block;
+		margin-bottom: 10px;
+	} footer .top .main-menu .list.narrow .tit{
+		margin-bottom: 0;
+	} footer .top .sub-menu{
+		display: flex;
+		flex-wrap: wrap;
+	} footer .top .sub-menu li{
+		width: 50%;
+	} 
+	
+	
+	footer .bot ul{
+		margin-bottom: 30px;
+		flex-wrap: wrap;
+	} footer .bot ul li{
+		width: 50%;
+		margin: 0;
+		padding: 7px 0;
+	}
+}

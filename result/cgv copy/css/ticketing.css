@@ -1,0 +1,289 @@
+body{
+    min-width: 1350px;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.sub-nav{
+    width: 1000px;   
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80px;
+} .sub-nav .button{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+} .sub-nav .button a{
+    position: relative;
+    display: block;
+    width: 81px;
+    height: 30px;
+    margin-left: 5px;
+    background-image: url("../img/ticketing_top-buttons.png");
+    overflow: hidden;
+} .sub-nav .button a span{
+    position: absolute;
+    left: 500px;
+} .sub-nav .button a:first-child{
+    background-position: 0 0;
+    width: 81px;
+    height: 30px;
+} .sub-nav .button a:nth-child(2){
+    background-position: 0 -30px;
+} .sub-nav .button a:nth-child(3){
+    width: 88px;
+    background-position: 0 -60px;
+} .sub-nav .button a:nth-child(4){
+    width: 101px;
+    background-position: 0 -90px;
+} .sub-nav .button a:nth-child(5){
+    width: 113px;
+    background-position: 0 -120px;
+}
+
+
+aside.banner{
+    width: 160px;
+    height: 300px;
+    background: url("../img/aside-banner.jpg") center/cover;
+} aside.banner.left{
+    margin-right: 10px;
+} aside.banner.right{
+    margin-left: 10px;
+}
+
+
+#ticketing-box .body::-webkit-scrollbar {
+    width: 7px;
+    margin-right: 10px;
+} #ticketing-box .body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #777;
+}
+
+#ticketing-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 100;
+}
+#ticketing-box section{
+    width: 280px;
+    height: 560px;
+    background-color: #f2f0e5;
+    border: 2px solid #d4d3c9;
+    border-left: 0px;
+    box-sizing: border-box;
+}
+#ticketing-box .movie{
+    border-left: 2px solid #d4d3c9;
+} #ticketing-box .date{
+    width: 100px;
+} #ticketing-box .time{
+    width: 340px;
+}
+#ticketing-box section .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: #333333;
+    color: #ddd;
+    font-weight: bold;
+}
+#ticketing-box .body{
+    overflow-y: scroll;
+    height: 535px;
+}
+
+
+
+
+#ticketing-box .movie .body ul li{
+    width: 160px;
+    height: 35px;
+    line-height: 32px;
+    margin: 10px 0;
+} #ticketing-box .movie .body ul li a{
+    font-size: 15px;
+}
+#ticketing-box .movie .body ul li.selected{
+    background-color: #333;
+    border: 1px solid #000;
+} #ticketing-box .movie .body ul li.selected a{
+    display: block;
+    color: #fff;
+    border: 1px solid #5c5c5c;
+    padding-left: 10px;
+}
+
+
+
+#ticketing-box .theater .body{
+    position: relative;
+    margin: 20px;
+} #ticketing-box .theater .body ul li a{
+    font-size: 14px;
+    display: block;
+}
+
+#ticketing-box .theater .body .main-area{
+    width: 110px;
+} #ticketing-box .theater .body .main-area li{
+    height: 33px;
+    margin: 2px 0;
+    line-height: 33px;
+}
+
+#ticketing-box .theater .body .main-area .target{
+    background-color: #e6e4d9;
+} #ticketing-box .theater .body .main-area .target > a{
+    color: #333;
+    text-align: right;
+} #ticketing-box .theater .body .main-area .target.selected{
+    background-color: #f2f0e5;
+}
+
+#ticketing-box .theater .body .main-area .target .sub-area{
+    display: none;
+} #ticketing-box .theater .body .main-area .target.selected .sub-area{
+    display: block;
+}
+
+
+#ticketing-box .theater .body .sub-area{
+    width: 115px;
+    position: absolute;
+    top: 0;
+    right: 0;
+} #ticketing-box .theater .body .sub-area li a{
+    font-weight: bold;
+} #ticketing-box .theater .body .sub-area li.selected a{
+    background-color: #333;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+
+
+#ticketing-box .date .body .tit{
+    text-align: center;
+    margin-bottom: 10px;
+} #ticketing-box .date .body .tit span{
+    display: block;
+    font-weight: bold;
+    color: #666;
+} #ticketing-box .date .body .tit span.year{
+    height: 25px;
+} #ticketing-box .date .body .tit span.month{
+    font-size: 24px;
+} 
+
+
+#ticketing-box .date .body ul li{
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    margin: 10px 0;
+}  
+#ticketing-box .date .body ul li a{
+    width: 45px;
+    margin: 0 auto;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}  
+#ticketing-box .date .body ul li a .year{
+    font-size: 16px;
+} #ticketing-box .date .body ul li a .month{
+    font-size: 28px;
+    text-align: center;
+}
+#ticketing-box .date .body ul li.day-sat a{
+    color: #31597e;
+} #ticketing-box .date .body ul li.day-sun a{
+    color: #ad2727;
+}  
+#ticketing-box .date .body ul li a .dayweek {
+    margin-right: 5px; 
+} #ticketing-box .date .body ul li a .day{
+    font-weight: bold;
+} 
+
+#ticketing-box .time .body .time-option{
+    display: flex;
+    height: 23px;
+    margin: 20px 20px 0;
+    border-bottom: 2px solid #cfcdc3;
+} 
+#ticketing-box .time .body .time-option span{
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    background: url("../img/day_night.png") no-repeat left;
+    background-position: 0 0;
+}#ticketing-box .time .body .time-option .morning{
+    padding-left: 18px;
+    background-position: 0 0;
+} #ticketing-box .time .body .time-option .night{
+    padding-left: 14px;
+    margin-left: 14px;
+    background-position: 0 -20px;
+} 
+#ticketing-box .time .body .placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: 14px;
+    color: #666;
+} 
+#tnb{
+    height: 120px;
+    background-color: #1d1d1c;
+
+} #tnb .inner{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+} 
+#tnb .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 100%;
+    color: #ccc;
+    font-size: 24px;
+    border-right: 1px solid #5c5c5c;
+} #tnb .movie-select{
+    -float: left;
+    -width: 210px;
+} #tnb .theater-select{
+    -float: left;
+    -width: 180px;
+} #tnb .path{
+    -float: left;
+    -display: flex;
+    -width: 230px;
+} #tnb .payment{
+    -float: right;
+    -width: 230px;
+} 
+.banner.center{
+    height: 140px;
+    margin: 30px 0;
+} .banner.center a{
+    display: block;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background: url("../img/banner.jpg");
+} 

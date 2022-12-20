@@ -1,0 +1,331 @@
+body {
+  min-width: 1350px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.sub-nav {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.sub-nav .button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+.sub-nav .button a {
+  position: relative;
+  display: block;
+  width: 81px;
+  height: 30px;
+  margin-left: 5px;
+  background-image: url("../img/ticketing_top-buttons.png");
+  overflow: hidden;
+}
+.sub-nav .button a span {
+  position: absolute;
+  left: 500px;
+}
+.sub-nav .button a:first-child {
+  background-position: 0 0;
+  width: 81px;
+  height: 30px;
+}
+.sub-nav .button a:nth-child(2) {
+  background-position: 0 -30px;
+}
+.sub-nav .button a:nth-child(3) {
+  width: 88px;
+  background-position: 0 -60px;
+}
+.sub-nav .button a:nth-child(4) {
+  width: 101px;
+  background-position: 0 -90px;
+}
+.sub-nav .button a:nth-child(5) {
+  width: 113px;
+  background-position: 0 -120px;
+}
+
+aside.banner {
+  width: 160px;
+  height: 300px;
+  background: url("../img/aside-banner.jpg") center/cover;
+}
+aside.banner.left {
+  margin-right: 10px;
+}
+aside.banner.right {
+  margin-left: 10px;
+}
+
+#ticketing-box .body .scroll::-webkit-scrollbar {
+  width: 7px;
+  margin-right: 10px;
+}
+#ticketing-box .body .scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #777;
+}
+
+#ticketing-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 100;
+}
+#ticketing-box section {
+  width: 280px;
+  height: 560px;
+  background-color: #f2f0e5;
+  border: 2px solid #d4d3c9;
+  border-left: 0px;
+  box-sizing: border-box;
+}
+#ticketing-box section.movie {
+  border-left: 2px solid #d4d3c9;
+}
+#ticketing-box section.date {
+  width: 100px;
+}
+#ticketing-box section.time {
+  width: 340px;
+}
+
+#ticketing-box section .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  background-color: #333333;
+  color: #ddd;
+  font-weight: bold;
+}
+#ticketing-box .body {
+  height: 515px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+#ticketing-box .body .scroll {
+  overflow-y: scroll;
+  padding-right: 5px;
+}
+#ticketing-box .movie .body ul li {
+  width: 160px;
+  height: 35px;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+#ticketing-box .movie .body ul li a {
+  font-size: 15px;
+  font-weight: bold;
+}
+#ticketing-box .movie .body ul li.selected {
+  background-color: #333;
+  border: 1px solid #000;
+}
+#ticketing-box .movie .body ul li.selected a {
+  display: block;
+  color: #fff;
+  border: 1px solid #5c5c5c;
+  padding-left: 10px;
+}
+
+#ticketing-box .theater .body ul li a {
+  font-size: 14px;
+  display: block;
+}
+#ticketing-box .theater .body .main-area {
+  width: 105px;
+}
+#ticketing-box .theater .body .main-area li {
+  height: 33px;
+  line-height: 33px;
+  margin: 2px 0;
+  text-align: right;
+  background-color: #e6e4d9;
+  color: #333;
+}
+#ticketing-box .theater .body .main-area li.selected {
+  background-color: #f2f0e5;
+}
+#ticketing-box .theater .body .main-area li a {
+  padding-right: 10px;
+}
+
+#ticketing-box .theater .body .sub-area {
+  width: 102px;
+  height: 385px;
+  margin-left: 10px;
+}
+#ticketing-box .theater .body .sub-area li {
+  display: none;
+  padding: 0;
+  margin: 2px 0;
+}
+#ticketing-box .theater .body .sub-area li a {
+  display: block;
+  height: 33px;
+  margin: 2px 0;
+  line-height: 33px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#ticketing-box .theater .body .sub-area li.active {
+  display: block;
+  -border: 1px solid #000;
+}
+#ticketing-box .theater .body .sub-area li.active a.selected {
+  display: block;
+  background-color: #333;
+  border: 1px solid #000;
+  color: #fff;
+}
+#ticketing-box .theater .body .sub-area li.active a.selected span {
+  display: block;
+  height: 31px;
+  border: 1px solid #5c5c5c;
+  padding-left: 5px;
+}
+
+#ticketing-box .date .body .tit {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#ticketing-box .date .body .tit span {
+  display: block;
+  font-weight: bold;
+  color: #666;
+}
+#ticketing-box .date .body .tit span.year {
+  height: 25px;
+}
+#ticketing-box .date .body .tit span.month {
+  font-size: 24px;
+}
+
+#ticketing-box .date .body .scroll {
+  height: 440px;
+}
+#ticketing-box .date .body ul li {
+  width: 65px;
+  height: 33px;
+  margin: 10px auto;
+  line-height: 31px;
+}
+#ticketing-box .date .body ul li a {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 0 10px;
+}
+#ticketing-box .date .body ul li a .year {
+  font-size: 16px;
+}
+#ticketing-box .date .body ul li a .month {
+  font-size: 28px;
+  text-align: center;
+}
+#ticketing-box .date .body ul li.day-sat a {
+  color: #31597e;
+}
+#ticketing-box .date .body ul li.day-sun a {
+  color: #ad2727;
+}
+#ticketing-box .date .body ul li a .dayweek {
+  margin-right: 5px;
+}
+#ticketing-box .date .body ul li a .day {
+  font-weight: bold;
+}
+#ticketing-box .date .body ul li.selected {
+  background-color: #333;
+  border: 1px solid #000;
+}
+#ticketing-box .date .body ul li.selected a {
+  color: #fff;
+  border: 1px solid #5c5c5c;
+}
+
+#ticketing-box .time .body .time-option {
+  display: flex;
+  height: 23px;
+  margin: 0 20px;
+  border-bottom: 2px solid #cfcdc3;
+}
+#ticketing-box .time .body .time-option span {
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  background: url("../img/day_night.png") no-repeat left;
+  background-position: 0 0;
+}
+#ticketing-box .time .body .time-option .morning {
+  padding-left: 18px;
+  background-position: 0 0;
+}
+#ticketing-box .time .body .time-option .night {
+  padding-left: 14px;
+  margin-left: 14px;
+  background-position: 0 -20px;
+}
+#ticketing-box .time .body .placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 14px;
+  color: #666;
+}
+#tnb {
+  height: 140px;
+  background-color: #1d1d1c;
+}
+#tnb .inner {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tnb .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 100px;
+  color: #ccc;
+  font-size: 24px;
+}
+#tnb .info.select {
+  border-right: 1px solid #5c5c5c;
+}
+
+#tnb .payment a {
+  width: 106px;
+  height: 108px;
+  background: url("../img/tnb_buttons.png") no-repeat;
+  background-position: 0 -220px;
+  border-right: 0;
+}
+.banner.center {
+  height: 140px;
+  margin: 50px 0;
+}
+.banner.center a {
+  display: block;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  background: url("../img/banner.jpg");
+}

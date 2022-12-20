@@ -1,0 +1,214 @@
+.inner{
+    width: 980px;
+    margin: 0 auto;
+}
+/**** #header-top ****/
+#header{
+    background: url("../img/bg_header.gif");
+    height: 150px;
+} #header-top{
+    height: 30px;
+    line-height: 30px;
+} #header-top .inner{
+    display: flex;
+    justify-content: space-between;
+}
+#header-top #lnb{
+    display: flex;
+} #header-top #lnb li a{
+    background: url("../img/common_sprite_area_v4_2016.png");
+    text-indent: -9999em;
+    display: block;
+    padding: 0 10px;
+}
+#header-top #lnb li:first-child a{
+    width: 74px;
+    background-position: 10px -714px;
+} #header-top #lnb li:nth-child(2) a{
+    width: 44px;
+    background-position: -85px -714px;
+} #header-top #lnb li:nth-child(3) a{
+    width: 60px;
+    background-position: -263px -714px;
+} #header-top #lnb li:last-child a{
+    width: 85px;
+    background-position: -151px -714px;
+}
+
+#header-top #rnb{
+    display: flex;
+} #header-top #rnb li a{
+    background: url("../img/common_sprite_area_v4_2016.png");
+    text-indent: -9999em;
+    display: block;
+    padding: 0 10px;
+}
+#header-top #rnb li:first-child a{
+    width: 29px;
+    background-position: 10px 9px;
+} #header-top #rnb li:nth-child(2) a{
+    width: 39px;
+    background-position: -42px 9px;
+} #header-top #rnb li:nth-child(3) a{
+    width: 39px;
+    background-position: -103px 9px;
+} #header-top #rnb li:nth-child(4) a{
+    width: 62px;
+    background-position: -170px 9px;
+} #header-top #rnb li:nth-child(5) a{
+    width: 53px;
+    background-position: -254px 9px;
+} #header-top #rnb li:nth-child(6) a{
+    width: 38px;
+    background-position: -328px 9px;
+} #header-top #rnb li:last-child a{
+    width: 106px;
+    background-position: -388px 9px;
+}
+
+
+
+/**** #header-bottom ****/
+#header-bottom .inner{
+    position: relative;
+} #header-bottom #logo{
+    position: absolute;
+    top: 28px;
+} #header-bottom #logo a{
+    display: block;
+    width: 136px;
+    height: 59px;
+    background: url("../img/h1_cgv.png");
+}#header-bottom .main-img{
+    position: absolute;
+    left: 370px;
+    top: 28px;
+}
+
+#header-bottom #gnb{
+    position: absolute;
+    left: 290px;
+    top: 63px;
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+} #header-bottom #gnb li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+} #header-bottom #gnb li.ticketing a{
+    color: #fb4357;
+}
+
+/* #header-bottom .right{
+    position: absolute;
+    margin-top: 20px;
+    right: 30px;
+    border: 2px solid red;
+} #header-bottom .right .ad{
+    float: right;
+    width: 100px;
+    right: 0;
+    border: 2px solid blueviolet;
+} #header-bottom .right .search{
+    clear: both;
+    width: 150px;
+    border: 2px solid blueviolet;
+} */
+
+
+
+/**** footer ****/
+#footer .ad{
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    height: 240px;
+
+    background: url("../img/foot_banner_blank.gif") #ffecc6 repeat-x; 
+    margin:0 auto;
+}
+
+#footer .service{
+    box-sizing: border-box;
+    height: 65px;
+    line-height: 42px;
+    background-color: #fdfcf0;
+    border-bottom: 1px solid #aaa;
+} #footer .service .inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .service li a{
+    display: block;
+    text-indent: -9999em;
+    background: url("../img/common_sprite_area_v4_2016.png");
+    height: 100%;
+} #footer .service li:nth-child(1) a{
+    width: 49px;
+    background-position: 0 -768px;
+} #footer .service li:nth-child(2) a{
+    width: 59px;
+    background-position: -74px -768px;
+} #footer .service li:nth-child(3) a{
+    width: 88px;
+    background-position: -159px -768px;
+} #footer .service li:nth-child(4) a{
+    width: 76px;
+    background-position: -273px -768px;
+} #footer .service li:nth-child(5) a{
+    width: 55px;
+    background-position: -480px -768px;
+} #footer .service li:nth-child(6) a{
+    width: 84px;
+    background-position: -567px -768px;
+} #footer .service li:nth-child(7) a{
+    width: 89px;
+    background-position: -679px -768px;
+} #footer .service li:nth-child(8) a{
+    width: 86px;
+    background-position: 0 -826px;
+} #footer .service li:nth-child(9) a{
+    width: 70px;
+    background-position: -113px -826px;
+} #footer .service li:nth-child(10) a{
+    width: 120px;
+    background-position: -207px -826px;
+} #footer .service li:nth-child(10) a{
+    width: 120px;
+    background-position: -207px -826px;
+}
+
+
+#footer #fnb{
+    padding: 15px 0 110px 0;    
+    background: #fdfcf0 url("../img/bg_footer_com.gif");
+} #footer #fnb .policy{
+    display: flex;
+    justify-content: space-between;
+} #footer #fnb .policy li a{
+    font-size: 13px;
+    color: #444;
+    letter-spacing: -1px;
+}
+
+#footer #fnb .com-info_wrap .f_logo{
+    background: url("../img/common_sprite_area_v4_2016.png");
+    text-indent: -9999em;
+    float: left;
+    width: 90px;
+    height: 43px;
+    margin-left: 10px;
+    background-position: -145px -319px;
+}
+#footer #fnb .com-info_wrap .com-info{
+    margin-top: 30px;
+    padding-left: 120px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #666;
+}
+#footer #fnb .com-info_wrap .manager{
+    display: flex;
+} 

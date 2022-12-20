@@ -1,0 +1,736 @@
+@charset "utf-8";
+
+/* 공통 */
+img {
+  width: 100%;
+  height: 100%;
+}
+.img.close-up {
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.img.close-up:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.close-box {
+  overflow: hidden;
+}
+.prod-btn {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.inner {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.flex-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header */
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+}
+/* header sub-menu*/
+#header .sub-menu {
+  padding: 7px 0;
+  background-color: #e5e5e5;
+}
+#header .sub-menu .inner {
+  padding: 0 100px;
+}
+#header .sub-menu .left {
+  display: flex;
+}
+#header .sub-menu .left .mynb {
+  width: 130px;
+  height: 14px;
+  background: url("../images/newbalance/btn_mynb.png") center/cover;
+  margin-right: 5px;
+}
+#header .sub-menu .left .made {
+  width: 108px;
+  height: 14px;
+  background: url("../images/newbalance/btn_made.png") center/cover;
+}
+
+#header .sub-menu .right {
+  display: flex;
+}
+#header .sub-menu .right a {
+  display: block;
+  font-size: 13px;
+  color: #333;
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+}
+#header .sub-menu .right a:last-child {
+  margin-right: 0;
+  border-right: 0;
+}
+
+/* header navbar*/
+.navbar {
+  background-color: #fff;
+}
+.navbar .inner {
+  padding: 0 100px;
+}
+.navbar .logo a {
+  display: block;
+  width: 63px;
+  height: 32px;
+  background: url("../images/newbalance/logo.png") center/cover;
+}
+
+.navbar .customer {
+  display: flex;
+  align-items: center;
+}
+.navbar .customer .btn_srch {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: url("../images/newbalance/gnb_customer.png") no-repeat 0 -7px;
+  text-indent: -9999em;
+  margin-right: 40px;
+}
+.navbar .customer .my_menu::before {
+  content: "";
+  display: inline-block;
+  width: 29px;
+  height: 30px;
+  background: url("../images/newbalance/gnb_customer.png") no-repeat -50px -6px;
+}
+.navbar .customer .my_menu {
+  text-align: center;
+}
+.navbar .customer .my_menu a {
+  width: 57px;
+  font-size: 14px;
+}
+.navbar .customer .my_menu a:first-child {
+  margin-right: 6px;
+  border-right: 1px solid #ccc;
+}
+.navbar .customer .my_menu a:hover {
+  color: #cf0a2c;
+}
+
+.dimm_gnb {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.75;
+  z-index: 10;
+}
+.dimm_gnb.active {
+  display: block;
+}
+
+/* gnb */
+#gnb {
+  display: flex;
+}
+#gnb .cancel-btn {
+  display: none;
+}
+#gnb .target > a {
+  padding: 25px 0;
+  display: block;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+}
+#gnb .target.nb a {
+  color: #cf0a2c;
+}
+#gnb .target > a:hover {
+  color: #cf0a2c;
+}
+
+#gnb .target .lnb-wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+}
+#gnb .target .lnb-wrap.active {
+  display: block;
+}
+
+#gnb .target .lnb {
+  display: flex;
+  justify-content: center;
+}
+#gnb .target .lnb .item {
+  width: 150px;
+}
+#gnb .target .lnb .item span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+#gnb .target .lnb .item .details li {
+  margin: 7px 0;
+  padding-right: 20px;
+}
+#gnb .target .lnb .item .details li a {
+  font-size: 14px;
+}
+#gnb .target .lnb .item .details li a:hover {
+  color: #cf0a2c;
+}
+#gnb .target .lnb .item:nth-child(2) {
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+
+#gnb .target .lnb .item.main {
+  width: 600px;
+}
+#gnb .target .lnb .item.main .details {
+  display: flex;
+}
+#gnb .target .lnb .item.main .details li .tit {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+#gnb .target .lnb .item.main .details li .main-img {
+  display: block;
+  width: 180px;
+  height: 180px;
+}
+#gnb .target .lnb .item.main .details li:last-child {
+  padding: 0;
+}
+
+#gnb .target.man .lnb .item.main .details li:first-child .main-img {
+  background: url("../images/newbalance/m_gnb_thum01.jpg") center/cover;
+}
+#gnb .target.man .lnb .item.main .details li:nth-child(2) .main-img {
+  background: url("../images/newbalance/m_gnb_thum02.jpg") center/cover;
+}
+#gnb .target.man .lnb .item.main .details li:nth-child(3) .main-img {
+  background: url("../images/newbalance/m_gnb_thum03.jpg") center/cover;
+}
+#gnb .target.woman .lnb .item.main .details li:first-child .main-img {
+  background: url("../images/newbalance/w_gnb_thum01.jpg") center/cover;
+}
+#gnb .target.woman .lnb .item.main .details li:nth-child(2) .main-img {
+  background: url("../images/newbalance/w_gnb_thum02.jpg") center/cover;
+}
+#gnb .target.woman .lnb .item.main .details li:nth-child(3) .main-img {
+  background: url("../images/newbalance/w_gnb_thum03.jpg") center/cover;
+}
+#gnb .target.kids .lnb .item.main .details li:first-child .main-img {
+  background: url("../images/newbalance/k_gnb_thum01.jpg") center/cover;
+}
+#gnb .target.kids .lnb .item.main .details li:nth-child(2) .main-img {
+  background: url("../images/newbalance/k_gnb_thum02.jpg") center/cover;
+}
+#gnb .target.kids .lnb .item.main .details li:nth-child(3) .main-img {
+  background: url("../images/newbalance/k_gnb_thum03.jpg") center/cover;
+}
+
+#gnb .target.nb .lnb {
+  width: 1000px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#gnb .target.nb .lnb .item {
+  width: 180px;
+}
+#gnb .target .lnb .item:nth-child(2) {
+  border-left: 0;
+  padding-left: 0;
+}
+#gnb .target.nb .lnb .item .nb-img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+#gnb .target.nb .lnb .item:first-child .nb-img {
+  background: url("../images/newbalance/nbyou-1.jpg") center/cover;
+}
+#gnb .target.nb .lnb .item:nth-child(2) .nb-img {
+  background: url("../images/newbalance/nbyou-2.jpg") center/cover;
+}
+#gnb .target.nb .lnb .item:nth-child(3) .nb-img {
+  background: url("../images/newbalance/nbyou-3.jpg") center/cover;
+}
+#gnb .target.nb .lnb .item:nth-child(4) .nb-img {
+  background: url("../images/newbalance/nbyou-4.jpg") center/cover;
+}
+#gnb .target.nb .lnb .item:last-child .nb-img {
+  background: url("../images/newbalance/nbyou-5.jpg") center/cover;
+}
+
+#gnb .target.nb .lnb .item:nth-child(2) {
+  border-left: 0;
+  padding-left: 0;
+}
+#gnb .target.nb .lnb .item .txt {
+  border-top: 1px solid #e3e3e3;
+  font-size: 15px;
+}
+#gnb .target.nb .lnb .item .txt p {
+  padding-top: 10px;
+  color: #aeaeae;
+}
+#gnb .target.nb .lnb .item .txt p strong {
+  display: block;
+  color: #000;
+  padding: 10px 0;
+}
+
+.slider {
+  padding: 0 50px;
+  height: 600px;
+}
+.slider .item {
+  height: 100%;
+}
+.slider .item:first-child {
+  display: none;
+  background: center/cover no-repeat fixed
+    url("../images/newbalance/slide-1.jpg");
+}
+.slider .item:nth-child(2) {
+  background: center/cover no-repeat fixed
+    url("../images/newbalance/slide-2.jpg");
+}
+
+.category {
+  padding: 200px 0;
+}
+.category .target {
+  width: 300px;
+  display: block;
+  text-align: center;
+}
+.category .target p:first-child {
+  color: #8e8e8e;
+  font-weight: bold;
+}
+.category .target p:nth-child(2) {
+  display: block;
+  font-size: 50px;
+}
+
+.type-a .item .txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.type-a .item .txt a {
+  padding: 0 100px 0 60px;
+  background: #fff url("../images/newbalance/icon_arrow_collection.png")
+    no-repeat right 50%;
+}
+.type-a .item .txt a .tit {
+  font-size: 32px;
+  font-weight: bold;
+}
+.type-a .item .txt a .desc {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.theme {
+  padding: 150px 0;
+}
+.theme .item {
+  position: relative;
+  height: 350px;
+  background-color: #f2f2f2;
+}
+
+.theme .item .txt {
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+
+  height: 200px;
+  background-color: #fff;
+  transition: left 0.8s, right 0.8s;
+}
+.theme .item:first-child .txt {
+  left: 0;
+}
+.theme .item:nth-child(2) .txt {
+  right: 0;
+}
+
+.theme .item .img {
+  position: absolute;
+  display: block;
+  width: 600px;
+  height: 420px;
+  transition: top 0.8s, left 0.8s, right 0.8s;
+}
+.theme .item:first-child .img {
+  background: url("../images/newbalance/theme-1.gif") center/cover;
+  top: 70px;
+  right: 0;
+}
+.theme .item:nth-child(2) .img {
+  background: url("../images/newbalance/theme-2.jpg") center/cover;
+  top: 130px;
+  left: 0;
+}
+
+.theme .item:first-child .txt.active {
+  left: 220px;
+}
+.theme .item:first-child .img.active {
+  top: -70px;
+  right: 220px;
+}
+.theme .item:nth-child(2) .txt.active {
+  right: 220px;
+}
+.theme .item:nth-child(2) .img.active {
+  top: 0;
+  left: 220px;
+}
+
+/* series */
+.series {
+  padding: 150px 0;
+}
+.series .inner {
+  width: 840px;
+}
+.series .item {
+  display: flex;
+  position: relative;
+  top: 100px;
+  transition: top 1s;
+  height: 250px;
+}
+
+.series .item:nth-child(2) {
+  transition-delay: 0.25s;
+}
+.series .item:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.series .item:nth-child(4) {
+  transition-delay: 0.75s;
+}
+.series .item:nth-child(5) {
+  transition-delay: 1s;
+}
+.series .item.active {
+  top: 0;
+}
+
+.series .item:first-child .img {
+  background: url("../images/newbalance/series-1.jpg") center/cover;
+}
+.series .item:nth-child(2) .img {
+  background: url("../images/newbalance/series-2.jpg") center/cover;
+}
+.series .item:nth-child(3) .img {
+  background: url("../images/newbalance/series-3.jpg") center/cover;
+}
+.series .item:last-child .img {
+  background: url("../images/newbalance/series-4.jpg") center/cover;
+}
+
+.series .item .img {
+  display: block;
+  width: 360px;
+  height: 100%;
+}
+.series .item .txt {
+  height: 250px;
+}
+
+/* live-fit */
+.live-fit {
+  padding: 150px 0 350px;
+}
+.live-fit .inner {
+  width: 920px;
+  height: 850px;
+  margin: 0 auto;
+}
+.live-fit .item-box {
+  position: relative;
+  height: 100%;
+}
+.live-fit .item.main {
+  position: absolute;
+  top: 100px;
+  width: 600px;
+  height: 839px;
+  transition: top 0.8s;
+  background: url("../images/newbalance/live-fit_main.jpg") center/cover;
+}
+
+.live-fit .item.main.active {
+  top: 0px;
+}
+.live-fit .item.sub.active {
+  top: 50px;
+}
+
+.live-fit .item.sub {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 520px;
+  top: 180px;
+  left: 400px;
+  transition: top 0.8s 0.3s;
+}
+.live-fit .item.sub li {
+  padding: 40px;
+  background-color: #fff;
+}
+.live-fit .item.sub li .img {
+  display: block;
+  width: 180px;
+  height: 180px;
+}
+.live-fit .item.sub li:first-child .img {
+  background: url("../images/newbalance/live-fit_sub-1.jpg") center/cover;
+}
+.live-fit .item.sub li:nth-child(2) .img {
+  background: url("../images/newbalance/live-fit_sub-2.jpg") center/cover;
+}
+.live-fit .item.sub li:nth-child(3) .img {
+  background: url("../images/newbalance/live-fit_sub-3.jpg") center/cover;
+}
+.live-fit .item.sub li:last-child .img {
+  background: url("../images/newbalance/live-fit_sub-4.jpg") center/cover;
+}
+
+.live-fit .item.sub li .txt {
+  width: 180px;
+  height: 100%;
+}
+.live-fit .prod-btn {
+  margin: 90px auto 0;
+}
+
+/* .performance */
+.performance {
+  padding: 100px 0 150px;
+}
+.performance .inner {
+  flex-wrap: wrap;
+}
+.performance .item {
+  width: 600px;
+  margin: 0 20px;
+}
+.performance .item .img {
+  display: block;
+  width: 600px;
+  height: 420px;
+}
+.performance .item:first-child .img {
+  background: url("../images/newbalance/performance-1.gif") center/cover;
+}
+.performance .item:nth-child(2) .img {
+  background: url("../images/newbalance/performance-2.gif") center/cover;
+}
+.performance .item:nth-child(3) .img {
+  background: url("../images/newbalance/performance-3.gif") center/cover;
+}
+.performance .item:nth-child(4) .img {
+  background: url("../images/newbalance/performance-4.gif") center/cover;
+}
+.performance .item:nth-child(5) .img {
+  background: url("../images/newbalance/performance-5.gif") center/cover;
+}
+.performance .item:last-child .img {
+  background: url("../images/newbalance/performance-6.gif") center/cover;
+}
+
+.nb-tag {
+  padding: 150px 0;
+}
+.nb-tag .tit {
+  text-align: center;
+  font-size: 110px;
+  font-weight: bold;
+}
+
+.nb-tag .tag-list {
+  margin-top: 100px;
+}
+.nb-tag .tag-list li a {
+  font-size: 50px;
+  font-weight: bold;
+  color: #e6e6e6;
+}
+
+.nb-tag .tag-prod {
+  width: 1000px;
+  padding: 0 50px;
+  margin: 50px auto 0;
+}
+.nb-tag .tag-prod li .img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+}
+.nb-tag .tag-prod li:first-child .img {
+  background: url("../images/newbalance/tag-prod-1.jpg") center/cover;
+}
+.nb-tag .tag-prod li:nth-child(2) .img {
+  background: url("../images/newbalance/tag-prod-2.jpg") center/cover;
+}
+.nb-tag .tag-prod li:nth-child(3) .img {
+  background: url("../images/newbalance/tag-prod-3.jpg") center/cover;
+}
+.nb-tag .tag-prod li:last-child .img {
+  background: url("../images/newbalance/tag-prod-4.jpg") center/cover;
+}
+.nb-tag .prod-btn {
+  margin-top: 100px;
+}
+
+/**********************************************************************/
+footer {
+  background-color: #232323;
+}
+footer .top {
+  padding: 35px 50px;
+  border-bottom: 1px solid #393939;
+}
+footer .top .menu {
+  display: block;
+  text-align: center;
+}
+footer .top .menu p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+footer .top .menu p:nth-child(2) {
+  display: block;
+  font-size: 14px;
+  color: #d3d3d3;
+}
+
+footer .bot {
+  display: flex;
+  padding: 60px 50px 0;
+}
+footer .bot .f-menu_bot {
+  width: 600px;
+  margin: 0 auto;
+  align-items: unset;
+}
+footer .bot .f-menu_bot li .tit {
+  padding-bottom: 13px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+footer .bot .f-menu_bot .sub-menu li a {
+  display: block;
+  margin-top: 15px;
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+footer .bot .info {
+  margin-left: 50px;
+}
+footer .bot .info .sns {
+  display: flex;
+  margin-bottom: 17px;
+  background: url("../images/newbalance/icon_foot_sns.png") no-repeat 0 0;
+}
+footer .bot .info .sns .type-a {
+  width: 21px;
+  text-indent: -9999em;
+  margin-right: 28px;
+}
+footer .bot .info .sns .type-b {
+  padding-left: 32px;
+  color: #aeaeae;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+footer .bot .info #address {
+  font-style: normal;
+}
+footer .bot .info #address div {
+  margin-top: 10px;
+  color: #acacac;
+  font-size: 14px;
+  line-height: 24px;
+}
+footer .bot .info #address div a {
+  color: #acacac;
+}
+footer .bot .info #address .admin p {
+  margin-right: 18px;
+}
+footer .bot .info #address .copyright {
+  margin: 20px 0;
+  font-size: 15px;
+  color: #545454;
+}
+
+footer .bot .info .isms {
+  display: flex;
+}
+footer .bot .info .isms .img {
+  display: block;
+  width: 60px;
+  padding-right: 25px;
+}
+footer .bot .info .isms .txt {
+  vertical-align: middle;
+}
+
+@media all and (max-width: 1280px) {
+  body {
+    min-width: 1280px;
+  }
+}

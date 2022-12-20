@@ -1,0 +1,786 @@
+html,
+body {
+  height: 100%;
+  background-color: #f9f5ef;
+  text-transform: uppercase;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  color: #f9f5ef;
+}
+header .inner {
+  overflow: hidden;
+  margin: 20px 20px;
+  z-index: 1;
+}
+header #logo {
+  float: left;
+}
+header nav ul {
+  float: right;
+  line-height: 24px;
+  font-size: 1.125rem;
+}
+header nav ul li {
+  float: left;
+  padding: 0 15px;
+}
+header nav ul li a {
+  color: #f9f5ef;
+}
+
+/* common */
+
+/* img-desc */
+.char-speech {
+  position: relative;
+  width: 35%;
+  margin-bottom: 50px;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.06rem;
+}
+.char-speech .speech-box {
+  position: absolute;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #a6814c;
+  font-size: 14px;
+  color: #f9f5ef;
+}
+.char-speech figure {
+  overflow: hidden;
+  position: relative;
+  width: 120px;
+  height: 150px;
+}
+.char-speech p {
+  position: absolute;
+  bottom: -25px;
+  text-indent: 120px;
+}
+
+/* INTRO */
+.intro {
+  position: relative;
+  height: 2000px;
+  background: url("https://dfy.co.kr/img/bg.f3d05cb1.jpg") center/cover;
+  color: #f9f5ef;
+}
+.intro .title-container {
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  animation: move linear 12.5s infinite;
+}
+.intro .title-container h2 {
+  margin-bottom: 10px;
+  font-size: 12rem;
+  letter-spacing: -1rem;
+  transition: transform 10s;
+  animation: text_loop 15s linear infinite;
+}
+.intro .title-container .bottom {
+  width: 100%;
+  line-height: 1.375rem;
+  box-sizing: border-box;
+  font-size: 1.375rem;
+}
+.intro .center-text-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2.5rem;
+  transform: translateY(-50%);
+}
+.intro .center-text-container span {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+}
+.intro .info-container {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+}
+.intro .info-container .location-time {
+  margin-bottom: 70px;
+  font-size: 7rem;
+  letter-spacing: -0.5rem;
+  text-transform: none;
+}
+.intro .info-container .location-time span {
+  display: block;
+}
+.intro .info-container .founding-date h3 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.intro .info-container .founding-date p {
+  font-size: 0.875rem;
+}
+.intro .ribon-container {
+  position: relative;
+}
+.intro .ribon-container a {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 100px;
+  bottom: 2px;
+}
+.intro .ribon-container a:nth-of-type(2) {
+  bottom: 100px;
+}
+.intro .ribon-container a:nth-of-type(3) {
+  bottom: 40px;
+  left: 35px;
+  transform: rotate(60deg);
+}
+.intro .ribon-container a:nth-of-type(4) {
+  left: 100px;
+}
+
+/* MAIN */
+main {
+}
+main .main-tit h2 {
+  font-size: 22rem;
+  letter-spacing: -1rem;
+}
+main .main-tit {
+  position: relative;
+}
+main .main-tit .char-speech.type2 {
+  position: absolute;
+  margin-bottom: 0;
+}
+
+main .main-intro-video .main-tit .char-speech.type2 {
+  position: absolute;
+  left: 240px;
+  bottom: 20px;
+}
+main .main-intro-video .video-container video {
+  height: 600px;
+  background-size: cover;
+  object-fit: cover;
+  object-position: top center;
+}
+main .main-intro-video .video-container figcaption {
+  font-size: 0.875rem;
+  letter-spacing: -0.03rem;
+}
+main .main-intro-desc .main-tit .char-speech.type2 {
+  right: 30px;
+  bottom: 20px;
+}
+main .main-intro-desc .desc-container {
+  /* overflow: hidden; */
+}
+/* float된 요소의 다음에 나오는 태그에 clear:both를 지정합니다.(단점 : clear:both가 적용된 요소에는 margin-top 적용 불가) */
+main .main-intro-desc .desc-container .left span {
+  display: block;
+  font-size: 0.875rem;
+}
+main .main-intro-desc .desc-container .right {
+  width: 55%;
+}
+main .main-intro-desc .desc-container .right .p-top {
+  margin-bottom: 20px;
+  line-height: 3.25rem;
+  font-size: 3.75rem;
+  letter-spacing: -0.2rem;
+}
+main .main-intro-desc .desc-container .right .p-bottom {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  text-indent: 7em;
+  letter-spacing: -0.06rem;
+}
+
+/* RECUIT */
+.recuit .inner {
+  width: 40%;
+}
+.recuit figure figcaption {
+  font-size: 0.875rem;
+  letter-spacing: -0.02rem;
+}
+.recuit .recuit-desc span {
+  font-size: 3.4rem;
+}
+.recuit .recuit-desc i {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background-color: #0aa86c;
+  text-align: center;
+  line-height: 3.25rem;
+  font-size: 2.25rem;
+  color: #fff;
+}
+
+/* RECENT-PROJECT */
+.recent-project {
+}
+.recent-project .inner {
+  overflow: hidden;
+  position: relative;
+  margin: 300px 0;
+}
+.recent-project .text-box h2 {
+  position: absolute;
+  top: 10px;
+  margin-left: 400px;
+  font-size: 0.875rem;
+}
+.recent-project .text-box div span {
+  display: block;
+  font-size: 13rem;
+  letter-spacing: -0.7rem;
+}
+.recent-project figure {
+  width: 1120px;
+  height: 1120px;
+}
+
+/* WORK-PREVIEW */
+.work-preview {
+  overflow: hidden;
+  position: relative;
+}
+.work-preview .inner {
+  margin: 400px 0;
+  text-align: center;
+}
+.work-preview h2 {
+  margin-bottom: 30px;
+  font-size: 9rem;
+  line-height: 7rem;
+  letter-spacing: -0.5rem;
+}
+.work-preview h2 em {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 10px;
+  /* height: 15vmin */
+  height: 105px;
+  /* line-height: 1px; */
+}
+.work-preview p {
+  font-size: 1.125rem;
+  margin-bottom: 80px;
+}
+.work-preview a {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  line-height: 2.25rem;
+  font-size: 1.875rem;
+  color: #000;
+}
+.work-preview a .material-icons {
+  font-size: 36px;
+}
+.work-preview .cat-img-container {
+  overflow: hidden;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 350px;
+  bottom: 250px;
+  font-size: 2.25rem;
+}
+.work-preview .human-img-container {
+  overflow: hidden;
+  position: absolute;
+  width: 120px;
+  height: 150px;
+  right: 400px;
+  bottom: 250px;
+  font-size: 2.25rem;
+}
+
+/* FEATURED-PROJECT */
+.featured-project {
+  position: relative;
+  overflow: hidden;
+  height: 1880px;
+  color: #f9f5ef;
+}
+.featured-project h2 {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  width: 5%;
+  font-size: 1.25rem;
+}
+.featured-project .project-list {
+  position: absolute;
+  top: 50%;
+  left: 500px;
+  width: 4080px;
+  transform: translateY(-50%);
+}
+.featured-project .project-list li {
+  overflow: hidden;
+  position: relative;
+  width: 620px;
+  height: 740px;
+  margin-right: 400px;
+  padding: 20px;
+  background-color: rgb(111, 80, 68);
+  box-sizing: border-box;
+}
+.featured-project .project-list li:nth-child(1) {
+  background-color: rgb(111, 80, 68);
+}
+.featured-project .project-list li:nth-child(2) {
+  background-color: #000;
+}
+.featured-project .project-list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.featured-project .project-list li:nth-of-type(1)::before {
+  background-image: url("https://www.dfy.co.kr/img/plastic-1.012ccddd.png");
+}
+.featured-project .project-list li:nth-of-type(2)::before {
+  background-image: url("https://www.dfy.co.kr/img/plastic-3.eda4a0da.png");
+}
+.featured-project .project-list li figure {
+  width: 460px;
+}
+.featured-project .project-list li figure figcaption {
+  margin-top: 10px;
+}
+.featured-project .project-list li .desc {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  font-size: 2rem;
+}
+.featured-project .bg-bottom-text {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5%;
+  transform: translateX(-50%);
+}
+.featured-project .bottom-text-container {
+  margin: 10px 20px;
+  color: #000;
+}
+.featured-project .bottom-text-container span {
+  display: inline-block;
+  width: 33%;
+  font-size: 2rem;
+}
+.featured-project .btn-slide {
+  position: absolute;
+  left: 50%;
+  bottom: calc(20% + 100px);
+  transform: translateX(-50%);
+}
+.featured-project .btn-slide li {
+  float: left;
+  margin: 0 10px;
+}
+.featured-project .btn-slide li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #000;
+  cursor: pointer;
+}
+.featured-project .btn-slide li.active button {
+  border-color: #000;
+  background-color: #fff;
+}
+
+/* HORIZON LIST WRAP */
+.horizon-list-wrap {
+  margin-top: 200px;
+}
+.horizon-list-wrap .horizon-list-header {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.horizon-list-wrap .horizon-list-header h2 {
+  padding-right: 10px;
+  font-size: 2rem;
+}
+.horizon-list-wrap .horizon-list-header .line-space {
+  width: calc(100% - 380px);
+  margin-top: 28px;
+  border-bottom: 1px solid #000;
+}
+.horizon-list-header button {
+  padding-left: 10px;
+  border: 0;
+  background-color: initial;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.horizon-list-wrap .horizon-list {
+  overflow: hidden;
+  margin: 0 -10px;
+}
+.horizon-list-wrap .horizon-list li {
+  float: left;
+  width: calc(20% - 10px);
+  height: 65vh;
+  margin: 0 5px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+}
+.horizon-list-wrap .horizon-list figcaption {
+  font-size: 1.5rem;
+}
+
+/* HORIZON LIST WRAP TYPE1 */
+.horizon-list-wrap.type1 .char-speech .speech-box {
+  left: -100px;
+}
+/* HORIZON LIST WRAP TYPE2 */
+.horizon-list-wrap.type2 .horizon-list li {
+  border-bottom: 0;
+}
+.horizon-list-wrap.type2 .char-speech {
+  margin-left: 400px;
+}
+.horizon-list-wrap.type2 .char-speech .speech-box {
+  left: 140px;
+}
+
+/* VIEW LARGE */
+.view-larger {
+  overflow: hidden;
+}
+.view-larger figure {
+  margin-top: 300px;
+}
+.view-larger figure .code-name {
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+/* COLLECTION */
+.collection {
+  position: relative;
+}
+.collection h2 {
+  position: absolute;
+  top: 700px;
+  left: 20px;
+  font-size: 1.25rem;
+  color: #f9f5ef;
+}
+.collection .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  height: 770px;
+  padding: 20px;
+  background-color: rgb(249, 245, 239);
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+.collection .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://dfy.co.kr/img/plastic-2.b084bfa9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection .item figure {
+  width: 460px;
+}
+.collection .item figure {
+  margin-top: 10px;
+}
+.collection .item .desc {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+.collection .item .desc span {
+  display: block;
+  font-size: 2rem;
+}
+.collection .producer {
+  text-align: center;
+}
+.collection .producer {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  font-size: 0.875rem;
+  color: #f9f5ef;
+}
+.collection .loop-text p {
+  padding: 15px 0;
+  font-size: 2rem;
+}
+
+.featured-project .project-list li:nth-child(1) {
+  background-color: rgb(111, 80, 68);
+}
+.featured-project .project-list li:nth-child(2) {
+  background-color: #000;
+}
+
+.featured-project .project-list li:nth-of-type(1)::before {
+  background-image: url("https://www.dfy.co.kr/img/plastic-1.012ccddd.png");
+}
+.featured-project .project-list li:nth-of-type(2)::before {
+  background-image: url("https://www.dfy.co.kr/img/plastic-3.eda4a0da.png");
+}
+
+.were-space-dwellers .content {
+  margin: 290px 0;
+}
+.were-space-dwellers h2 {
+  font-size: 0.875rem;
+}
+.were-space-dwellers .text-box {
+  font-size: 14rem;
+  letter-spacing: -1rem;
+}
+.were-space-dwellers .text-box em {
+  display: inline-block;
+  height: 165px;
+  margin: 0 -60px 0 -40px;
+  line-height: 1px;
+}
+
+.explore-project {
+  overflow: hidden;
+}
+.explore-project h2 {
+  font-size: 1.25rem;
+}
+.explore-project .explore-project-header {
+  font-size: 1.375rem;
+}
+.explore-project .char-speech {
+  margin-left: 700px;
+}
+.explore-project .char-speech .speech-box {
+  left: 100px;
+}
+
+footer {
+  overflow: hidden;
+  background-color: #000;
+  color: #ebe3d7;
+}
+footer .motto h2 {
+  font-size: 3.75rem;
+}
+footer .motto h2 span {
+  display: block;
+  margin-left: 770px;
+}
+footer .motto {
+  position: relative;
+  height: 710px;
+}
+footer .motto figure {
+  position: absolute;
+  top: 130px;
+  width: 740px;
+}
+footer .motto figure::after {
+  content: "";
+  display: block;
+  height: 600px;
+}
+footer .motto .textbox {
+  width: 19%;
+  margin-left: 1200px;
+  line-height: 1.5rem;
+}
+footer .help {
+  display: block;
+  width: 100%;
+  height: 280px;
+  margin-top: 100px;
+  border: 1px solid #ebe3d7;
+  border-radius: 120px;
+  background-color: initial;
+  font-size: 3.75rem;
+  color: #ebe3d7;
+  text-transform: uppercase;
+}
+footer .copyright {
+  margin: 20px 0;
+}
+footer .copyright .top {
+  font-size: 15rem;
+  letter-spacing: -1rem;
+  text-align: center;
+  text-transform: none;
+}
+footer .copyright .bottom {
+  font-size: 1.25rem;
+}
+footer .copyright .bottom .center {
+  margin-left: 600px;
+}
+footer .copyright .bottom .center p {
+  display: inline-block;
+}
+footer .copyright .bottom .center p span {
+  text-transform: lowercase;
+}
+footer .copyright .bottom .center .box {
+  display: inline-block;
+  padding: 1px 3px;
+  border: 1px solid #ebe3d7;
+  border-radius: 10px;
+  font-size: 0.875rem;
+}
+
+.avatar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+}
+.avatar figure {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://dfy.co.kr/img/animate_avatar_ann.287ab2e1.png");
+  background-size: 1000%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1600px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+  .intro .info-container .location-time {
+    font-size: 6rem;
+  }
+  main .main-tit h2 {
+    font-size: 20rem;
+  }
+  .work-preview h2 em {
+    height: 95px;
+  }
+  .were-space-dwellers {
+  }
+}
+@media screen and (max-width: 1440px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .intro .title-container h2 {
+    font-size: 11rem;
+  }
+  main .main-tit h2 {
+    font-size: 18rem;
+  }
+  .work-preview h2 em {
+    height: 90px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+  .intro .title-container h2 {
+    font-size: 10rem;
+  }
+  main .main-tit h2 {
+    font-size: 16rem;
+  }
+  .work-preview h2 em {
+    height: 82.5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .intro .title-container h2 {
+    font-size: 9rem;
+  }
+  main .main-tit h2 {
+    font-size: 14rem;
+  }
+  .work-preview h2 em {
+    height: 75px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 11px;
+  }
+  .intro .title-container h2 {
+    font-size: 8rem;
+  }
+  main .main-tit h2 {
+    font-size: 12rem;
+  }
+  .work-preview h2 em {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  .intro .title-container h2 {
+    font-size: 7rem;
+  }
+  main .main-tit h2 {
+    font-size: 14rem;
+  }
+}
+
+@keyframes text_loop {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,10 @@
+/* GOOGLE ICON */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* Noto Sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+/* COURGETTE */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+.courgette {
+  font-family: "Courgette", cursive;
+}

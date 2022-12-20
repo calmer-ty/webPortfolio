@@ -1,0 +1,126 @@
+#header #logo {
+  height: 60px;
+}
+#header #logo a {
+  display: inline-block;
+  height: 100%;
+}
+#header #logo span {
+  letter-spacing: 0.5rem;
+}
+#header div[class^="header"] .inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+#header .header-top .inner {
+  padding: 20px 0;
+}
+#header .header-top .list-member li {
+  float: left;
+  margin: 0 20px;
+  text-align: center;
+}
+#header .header-top .list-member li.ad {
+  margin: 5px 20px;
+}
+#header .header-top .list-member li * {
+  display: block;
+}
+#header .header-top .list-member li i {
+  margin-bottom: 5px;
+  font-size: 2rem;
+  color: #333;
+}
+#header .header-top .list-member li span {
+  font-size: 0.8rem;
+  color: #666;
+}
+#header .header-bot {
+  border-top: 1px solid #ddd;
+  border-bottom: 2px solid #fb4357;
+}
+#header .header-bot .box-srch {
+  margin: 10px 0;
+}
+#header .header-bot .box-srch input {
+  margin-top: 1px;
+  margin-right: 10px;
+}
+#gnb li {
+  float: left;
+  padding: 15px 30px;
+  font-weight: 700;
+}
+#gnb li a {
+  color: #fb4357;
+}
+
+#footer .inner {
+  width: 1000px;
+  margin: 0 auto;
+  color: #666;
+}
+#footer .f-bot {
+  position: relative;
+  width: 1000px;
+  margin: 20px auto;
+}
+#footer [class^="list"] li,
+#footer [class^="list"] dt,
+#footer [class^="list"] dd {
+  float: left;
+}
+#footer [class^="list"]::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#footer .list-policy {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.8rem;
+}
+#footer .list-policy li {
+  padding: 0 12px;
+}
+#footer .list-policy li:first-of-type {
+  padding-left: 0;
+}
+#footer .list-policy li:last-of-type {
+  padding-right: 0;
+}
+#footer .list-policy li a {
+  color: #666;
+}
+
+#footer .info-company {
+  font-size: 0.7rem;
+}
+#footer .info-company > * {
+  line-height: 1.7;
+}
+#footer .link-site {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#footer .link-site select {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.7rem;
+}
+#footer .link-site button {
+  padding: 10px;
+  background-color: #aaa;
+  color: #fff;
+}
+
+.cont2.ban-bot {
+  margin-top: 100px;
+  text-align: center;
+  background-color: #182b6c;
+  background-image: url("../images/cgv/bg_overflow-banner.gif");
+  background-repeat: repeat-x;
+}

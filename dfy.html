@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DFY-clone</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/dfy.css" />
+    <style>
+      div[class*="-area"] {
+        background-color: red;
+      }
+
+      div[class*="-wrap"] {
+        border: 5px solid blue;
+      }
+    </style>
+  </head>
+  <!-- 형태(prefix) + 의미(subfix) + 상태(suffix) 
+예 : notice_view.html, order_list.html, menu_main_left.html
+-->
+
+  <body>
+    <div id="wrap">
+      <!-- HEADER -->
+      <header id="header" class="clearfix">
+        <div class="inner">
+          <h1 id="logo">DFY</h1>
+          <nav id="gnb">
+            <ul>
+              <li>
+                <button><i class="material-icons">equalizer</i></button>
+              </li>
+              <li><a href="">work</a></li>
+              <li><a href="">services</a></li>
+              <li><a href="">about</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- CONT - HOME -->
+      <div class="bg-home">
+        <video
+          class="w100p"
+          src="./images/dfy/bg_home.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+
+        <!-- <div class="inner"> -->
+        <div class="home-top">
+          <h2>defy the current</h2>
+          <div class="box-txt clearfix">
+            <div class="txt-left float-L">
+              today's creative <br />
+              for tomorrow
+            </div>
+            <div class="txt-right float-R">
+              October <br />
+              ©2K22
+            </div>
+          </div>
+        </div>
+
+        <div class="box-project-name">
+          <h5>D FLAT® (seongsu)</h5>
+          <p>
+            D FLAT® Seongsu officially opened its doors on the last day of
+            April. © 2022
+          </p>
+        </div>
+        <!-- </div> -->
+
+        <div class="wrap-img-box">
+          <figure class="box-img">
+            <img src="./images/dfy/img_ribon.png" alt="ribon" />
+            <img src="./images/dfy/img_ribon2.png" alt="ribon" />
+            <img src="./images/dfy/img_ribon3.png" alt="ribon" />
+            <img src="./images/dfy/img_ribon4.png" alt="ribon" />
+          </figure>
+        </div>
+      </div>
+      <!-- CONTAINER -->
+
+      <div id="container">
+        <!-- CONT -MAIN -->
+        <main class="cont main">
+          <div class="box-video">
+            <!-- box-video => video -->
+            <div class="video-top">
+              <h3>we love</h3>
+              <img src="" alt="" />
+            </div>
+            <div class="video-bot">
+              <figure>
+                <video
+                  class="w100p"
+                  src="./images/dfy/video_main.mp4"
+                  autoplay
+                  muted
+                  loop
+                ></video>
+                <figcaption>A little preview of what we can do</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="box-intro">
+            <!-- box-intro => intro -->
+            <div class="intro-top">
+              <h3>design</h3>
+              <img src="" alt="" />
+            </div>
+            <div class="intro-bot clearfix">
+              <div class="tit-left float-L">
+                Today’s Creative <br />
+                for Tomorrow™<br />
+                DFY 2K11-22©
+              </div>
+              <div class="desc-right float-R">
+                <p class="en">
+                  DFY Is Where Different Worlds Come Together. Where they are
+                  reimagined and recreated. And where we Defy the Current to
+                  make a difference in a way that matters.
+                </p>
+                <p class="ko">
+                  디파이 더 커런트(DEFY THE CURRENT). 뭐든지 새롭게 해석하는
+                  일은 우리가 제일 좋아하고 잘하는 일입니다. 다양한 분야의
+                  전문가들이 모여 브랜드의 상상을 현실로 만드는 곳. 여기는 DFY!
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- CONT - PREVIEW-PROJECT -->
+        <div class="cont preview-project">
+          <div class="cont-link">
+            <!-- cont-link => link -->
+            <div class="link-txt">
+              <h3>
+                want to see <br />
+                how<img src="./images/dfy/img_txt.jpg" alt="" />we help <br />
+                brands?
+              </h3>
+              <h4>
+                브랜드와 소비자를 이어주는 디파이의 프로젝트를 소개합니다.
+              </h4>
+            </div>
+            <label class="btn-link">
+              <a class="float-L" href="">OUR WORK </a>
+              <i class="material-icons">arrow_forward</i>
+            </label>
+          </div>
+        </div>
+
+        <!-- CONT - PREVIEW-PROJECT -->
+        <div class="cont featured-project">
+          <!-- <h3>featured projects</h3> -->
+          <ul class="list-project">
+            <li>
+              <div class="inner">
+                <div class="thumb-project">
+                  <div class="numero">(N°08677)</div>
+                  <figure>
+                    <video
+                      class="w100p"
+                      src="./images/dfy/thumb_feature-project.mp4"
+                      autoplay
+                      muted
+                      loop
+                    ></video>
+                    <figcaption>
+                      Optimism about newness. FUNKPLAY, INSTANTFUNK.
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="desc-project">
+                  <div class="txt-top">INSTANTFUNK(E-commerce)</div>
+                  <div class="txt-bot"><span>©2K22</span></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="btn-slide">
+            <li class="active"><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+          </ul>
+        </div>
+
+        <!-- CONT - ROW-LIST -->
+        <div class="cont row-list">
+          <div class="cont-top clearfix">
+            <h3 class="float-L">row-list</h3>
+            <!-- <div class="line"></div> -->
+            <button class="float-R">view all</button>
+          </div>
+          <div class="cont-bot">
+            <ul class="list-project2">
+              <li>
+                <figure>
+                  <video
+                    src="./images/dfy/thumb_feature-project.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                  <figcaption>
+                    <div class="txt-top">INSTANTFUNK</div>
+                    <div class="txt-bot">
+                      <span>(E-commerce)</span><span>©2K22</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/dfy/thumb_row-list.webp" alt="img" />
+                  <figcaption>
+                    <div>MarppleShop</div>
+                    <div><span>(E-commerce)</span><span>©2K22</span></div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <video
+                    src="./images/dfy/thumb_row-list2.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                  <figcaption>
+                    <div>Shangpree</div>
+                    <div><span>(Website)</span><span>©2K22</span></div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/dfy/thumb_row-list3.webp" alt="img" />
+                  <figcaption>
+                    <div>Younglim Total Interior</div>
+                    <div><span>(Website)</span><span>©2K22</span></div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/dfy/thumb_row-list4.webp" alt="img" />
+                  <figcaption>
+                    <div>PLANIT 147</div>
+                    <div><span>(Website)</span><span>©2K22</span></div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CONT - LARGE-VIEW -->
+        <div class="cont larger-view clearfix">
+          <div class="cont-top mb300">
+            <figure>
+              <figcaption class="numero">(N°08093)</figcaption>
+              <img src="./images/dfy/thumb_larger-view.webp" alt="img" />
+              <figcaption>
+                <div class="txt-left">galaxy Z flip3 5G (website)</div>
+                <div class="txt-right">©2K21</div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="cont-bot">
+            <figure class="float-R">
+              <figcaption class="numero">(N°08550)</figcaption>
+              <video
+                src="./images/dfy/thumb_larger-view2.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+              <figcaption>
+                <div class="txt-left">NAVER 1784 (website)</div>
+                <div class="txt-right">©2K21</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- CONT - COLLECTION -->
+        <div class="cont collection">
+          <h3>collection</h3>
+          <div class="box-item">
+            <!-- box-item => item -->
+            <div class="inner">
+              <div class="item-top clearfix">
+                <div class="numero float-L">
+                  <img src="./images/dfy/ico_star.svg" alt="ico" />
+                </div>
+                <figure>
+                  <img
+                    class="w100p"
+                    src="./images/dfy/thumb_collection.jpg"
+                    alt="thumb"
+                  />
+                  <figcaption>samsung galaxy websites</figcaption>
+                </figure>
+              </div>
+              <div class="item-bot">
+                <span class="t-align-L">galaxy</span>
+                <span class="t-align-C">(collection)</span>
+                <span class="t-align-R">samsung</span>
+              </div>
+            </div>
+          </div>
+          <div class="producer">Artwork by © Dim Gunger</div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer id="footer">
+        <!-- footer => f- -->
+        <div class="f-top">
+          <div class="box-top">
+            <figure>
+              <img class="w100p" src="./images/dfy/img_f-main.jpg" alt="img" />
+              <figcaption>a resting place.</figcaption>
+            </figure>
+            <div class="txt-desc">
+              Just like your favorite spot, digital spaces and experiences
+              should make you feel comfortable — like home.
+            </div>
+          </div>
+          <div class="box-bot">
+            <figure>
+              <img class="w100p" src="./images/dfy/img_f-sub.jpg" alt="img" />
+              <figcaption>OUR BRIGHTEST IDEAS BEGIN HERE.</figcaption>
+            </figure>
+            <div class="txt-desc">
+              뒹굴뒹굴하기 좋은 집처럼 매일 들르는 카페처럼 우리는 디지털 공간에
+              편안함과 호기심 그리고 새로운 즐거움을 담습니다.
+            </div>
+          </div>
+        </div>
+        <button class="btn-help">how can we help you?</button>
+        <div class="f-bot clearfix mt20">
+          <div class="f-logo">DFY</div>
+          <div class="txt-slogan">
+            today's creative <span>for</span>tomorrow
+          </div>
+          <div class="box-link">
+            <a href="">credits</a>
+            <a href="">cookie & privaacy policy</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
