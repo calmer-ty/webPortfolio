@@ -58,7 +58,7 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
-.cont ul[class^="list"] li figure img {
+.cont ul[class^="list"] li figure .thumb-img {
   display: block;
   width: 100%;
   border-radius: 15px;
@@ -68,29 +68,46 @@
 }
 .cont-bot .box-details {
   position: absolute;
-  content: "";
-  /* display: none; */
+  display: none;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  /* background-color: #000; */
+  background-color: rgba(0, 0, 0, 0.5);
   /* opacity: 0.3; */
 }
 .cont-bot .thumb:hover .box-details {
   display: block;
   margin: auto;
 }
+.cont-bot .thumb i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .cont-bot .box-details a {
-  /* position: absolute; */
+  position: absolute;
+  /* top: 20px; */
+  left: 50%;
   display: block;
   width: 100px;
   height: 40px;
+  border-radius: 5px;
   background-color: #fff;
-  /* left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); */
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 3;
+  transform: translateX(-50%);
+}
+.cont-bot .box-details a.detail-view {
+  top: 70px;
+}
+.cont-bot .box-details a.ticketing {
+  top: 130px;
+  background-color: #fb4357;
+  color: #fff;
 }
 .cont-bot figcaption {
   padding: 15px 0;
@@ -136,6 +153,17 @@
 /* CONT - EVENT */
 .cont.event ul[class^="list"] li {
   width: 33.3%;
+}
+.cont.event ul[class^="list"] li a {
+  display: block;
+  /* width: 300px;
+  height: 200px; */
+  overflow: hidden;
+  border-radius: 15px;
+}
+.cont.event ul[class^="list"] li a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 /* CONT - SPECIAL */
