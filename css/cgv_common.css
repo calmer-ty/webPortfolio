@@ -70,10 +70,25 @@
 #footer [class^="list"] dd {
   float: left;
 }
+
 #footer [class^="list"]::after {
   content: "";
   display: block;
   clear: both;
+}
+/* #footer [class^="list"] dt {
+  display: block;
+  background-color: #ccc;
+} */
+#footer [class^="list"] dt::after {
+  content: ":";
+  display: inline-block;
+  margin: 0 3px;
+}
+#footer [class^="list"] dd::after {
+  content: "·";
+  display: inline-block;
+  margin: 0 5px;
 }
 
 #footer .list-policy {
@@ -99,6 +114,9 @@
 }
 #footer .info-company > * {
   line-height: 1.7;
+}
+#footer .info-company a {
+  text-decoration: underline;
 }
 #footer .link-site {
   position: absolute;
