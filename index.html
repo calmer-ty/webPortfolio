@@ -1,139 +1,198 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebPortfolio</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/default.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
 
-  <body>
-    <div id="wrap">
-      <header id="header">
-        <div class="inner">
-          <h1 id="logo">Portfolio</h1>
-          <nav id="gnb">
-            <ul>
-              <li><button>HOME</button></li>
-              <li><button>Portfolio</button></li>
-            </ul>
-            <div class="btn-lnb">
-              <button class="open">
-                <i class="material-icons">menu</i>
-              </button>
-              <button class="close">
-                <i class="material-icons">close</i>
-              </button>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <div class="cont intro on" id="intro">
-        <div class="inner">
-          <h2>Web Publisher - Taeyeon Kim</h2>
-        </div>
-      </div>
-      <!-- <div class="about container" id="about">about</div> -->
-      <div class="cont portfolio" id="portfolio">
-        <div class="inner">
-          <!-- <div class="txt-img">PORTFOLIO</div> -->
-          <h2>
-            <div class="box-word clearfix">
-              <span class="left delay02">P</span>
-              <span class="left delay02">o</span>
-              <span class="left delay01">r</span>
-              <span class="left delay01">t</span>
-              <span class="delay01">f</span>
-              <span class="right delay01">o</span>
-              <span class="right delay01">l</span>
-              <span class="right delay02">i</span>
-              <span class="right delay02">o</span>
-            </div>
-          </h2>
-          <div class="list-item">
-            <ul class="clearfix">
-              <!-- <li>
-                <a href="#">
-                  <img
-                    src="./images/hongcha_sample.png"
-                    alt="사이트 샘플 이미지"
-                  />
-                </a>
-                <dl>
-                  <dt>카페 사이트</dt>
-                  <dd>
-                    html, css를 사용하여 간단하게 카페 사이트를 제작하였습니다.
-                  </dd>
-                </dl>
-              </li> -->
-              <li>
-                <a href="./cgv.html" target="_blank">
-                  <img src="./images/cgv_sample.png" alt="사이트 샘플 이미지" />
-                </a>
-                <dl>
-                  <dt>CGV</dt>
-                  <dd>CGV 사이트를 클론하여 웹 작업하였습니다.</dd>
-                </dl>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/newbalance_sample.png"
-                    alt="사이트 샘플 이미지"
-                  />
-                </a>
-                <dl>
-                  <dt>뉴발란스</dt>
-                  <dd>뉴발란스 사이트를 클론하여 웹 작업하였습니다.</dd>
-                </dl>
-              </li>
-              <li>
-                <a href="./dfy.html" target="_blank">
-                  <img src="./images/dfy_sample.png" alt="사이트 샘플 이미지" />
-                </a>
-                <dl>
-                  <dt>DFY</dt>
-                  <dd>DFY 사이트를 클론하여 웹 작업하였습니다.</dd>
-                </dl>
-              </li>
-              <li>
-                <a href="./kakao.html" target="_blank">
-                  <img
-                    src="./images/kakao_sample.png"
-                    alt="사이트 샘플 이미지"
-                  />
-                </a>
-                <dl>
-                  <dt>카카오</dt>
-                  <dd>
-                    레퍼런스 사이트를 참고하여 카카오 웹페이지를
-                    리뉴얼하였습니다.
-                  </dd>
-                </dl>
-              </li>
-            </ul>
-          </div>
-          <div class="btn-move">
-            <button class="prev">
-              <i class="material-icons">chevron_left</i>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebPortfolio</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/default.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <h1 id="logo">Portfolio</h1>
+        <nav id="gnb">
+          <ul>
+            <li><button>HOME</button></li>
+            <li><button>Portfolio</button></li>
+          </ul>
+          <div class="btn-lnb">
+            <button class="open">
+              <i class="material-icons">menu</i>
             </button>
-            <button class="next">
-              <i class="material-icons">chevron_right</i>
+            <button class="close">
+              <i class="material-icons">close</i>
             </button>
           </div>
-        </div>
+        </nav>
       </div>
-      <button class="btn scroll-show">
-        <i class="material-icons">expand_more</i>
-      </button>
+    </header>
+    <div class="cont intro on" id="intro">
+      <div class="inner">
+        <h2>Web Publisher - Taeyeon Kim</h2>
+        <!-- <div class="list-item" style="display: none;">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+        <div class="btn-move" style="display: none;">
+          <button class="prev">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <button class="next">
+            <i class="material-icons">chevron_right</i>
+          </button>
+        </div> -->
+      </div>
     </div>
+    <div class="cont portfolio type1" id="portfolio">
+      <div class="inner">
+        <h2>
+          <div class="box-word clearfix">
+            <span class="left delay02">P</span>
+            <span class="left delay02">e</span>
+            <span class="left delay01">r</span>
+            <span class="delay01">s</span>
+            <span class="delay01">o</span>
+            <span class="right delay01">n</span>
+            <span class="right delay01">a</span>
+            <span class="right delay02">l</span>
+          </div>
+        </h2>
+        <div class="list-item">
+          <ul class="clearfix">
+            <li>
+              <a href="./cgv.html" target="_blank">
+                <img src="./images/cgv_sample.png" alt="사이트 샘플 이미지" />
+              </a>
+              <dl>
+                <dt>CGV</dt>
+                <dd>CGV 사이트를 클론하여 웹 작업하였습니다.</dd>
+              </dl>
+            </li>
+            <li>
+              <a href="./newbalance.html" target="_blank">
+                <img src="./images/newbalance_sample.png" alt="사이트 샘플 이미지" />
+              </a>
+              <dl>
+                <dt>뉴발란스</dt>
+                <dd>뉴발란스 사이트를 클론하여 웹 작업하였습니다.</dd>
+              </dl>
+            </li>
+            <li>
+              <a href="./dfy.html" target="_blank">
+                <img src="./images/dfy_sample.png" alt="사이트 샘플 이미지" />
+              </a>
+              <dl>
+                <dt>DFY</dt>
+                <dd>DFY 사이트를 클론하여 웹 작업하였습니다.</dd>
+              </dl>
+            </li>
+            <li>
+              <a href="./kakao.html" target="_blank">
+                <img src="./images/kakao_sample.png" alt="사이트 샘플 이미지" />
+              </a>
+              <dl>
+                <dt>카카오</dt>
+                <dd>
+                  레퍼런스 사이트를 참고하여 카카오 웹페이지를
+                  리뉴얼하였습니다.
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-move">
+          <button class="prev">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <button class="next">
+            <i class="material-icons">chevron_right</i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cont portfolio type2" id="portfolio">
+      <div class="inner">
+        <h2>
+          <div class="box-word clearfix">
+            <span class="left delay02">C</span>
+            <span class="left delay02">o</span>
+            <span class="left delay01">o</span>
+            <span class="left delay01">p</span>
+            <span class="left delay01">e</span>
+            <span class="delay01">r</span>
+            <span class="right delay01">a</span>
+            <span class="right delay01">t</span>
+            <span class="right delay01">i</span>
+            <span class="right delay02">o</span>
+            <span class="right delay02">n</span>
+          </div>
+        </h2>
+        <div class="list-item">
+          <ul class="clearfix">
+            <li>
+              <a href="./cgv.html" target="_blank">
+                <img src="./images/cgv_sample.png" alt="사이트 샘플 이미지" />
+              </a>
+              <dl>
+                <dt>퍼블리싱 작업 참여</dt>
+                <dd>기간 : 22.07 ~ 22.10</dd>
+              </dl>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/newbalance_sample.png" alt="사이트 샘플 이미지" />
+              </a>
+              <dl>
+                <dt>퍼블리싱 작업 참여</dt>
+                <dd>기간 : 22.07 ~ 22.10</dd>
+              </dl>
+            </li>
+            <li>
+              <a href="./dfy.html" target="_blank">
+                <img src="./images/kakao_sample.png" alt="사이트 샘플 이미지" />
+              </a>
+              <dl>
+                <dt>퍼블리싱 작업 참여</dt>
+                <dd>기간 : 22.07 ~ 22.10</dd>
+              </dl>
+            </li>
+            <li>
+              <a href="./kakao.html" target="_blank">
+                <img src="./images/kakao_sample.png" alt="사이트 샘플 이미지" />
+              </a>
+              <dl>
+                <dt>퍼블리싱 작업 참여</dt>
+                <dd>기간 : 22.07 ~ 22.10</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-move">
+          <button class="prev">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <button class="next">
+            <i class="material-icons">chevron_right</i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="btn scroll-show">
+      <i class="material-icons">expand_more</i>
+    </button>
+  </div>
 
-    <script src="./js/nav.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+  <script src="./js/nav.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>

@@ -1,6 +1,8 @@
 const contPortfolio = document.querySelector(".cont.portfolio");
 const listItem = contPortfolio.querySelector(".list-item ul");
 
+let itemCount = 0;
+
 function infoSlide() {
   const infoContainer = document.querySelectorAll(".cont");
   const btnScroll = document.querySelector(".btn.scroll-show");
@@ -23,6 +25,7 @@ function infoSlide() {
     }
     pageSwitch();
     listItem.style.left = "0px";
+    itemCount = 0;
   }
   function moveDown() {
     pageCount++;
@@ -31,6 +34,7 @@ function infoSlide() {
     }
     pageSwitch();
     listItem.style.left = "0px";
+    itemCount = 0;
   }
 
   // 키로 슬라이드 작동
@@ -70,7 +74,6 @@ function itemSlide() {
   const btnMove = contPortfolio.querySelectorAll(".btn-move button");
   const item = listItem.querySelectorAll("li");
   const itemWidth = item[0].offsetWidth;
-  let itemCount = 0;
 
   btnMove[0].addEventListener("click", function () {
     itemCount--;
@@ -86,7 +89,6 @@ function itemSlide() {
     }
     listItem.style.left = "-" + itemCount * itemWidth + "px";
   });
-  console.log(btnMove[0]);
 }
 
 function init() {
