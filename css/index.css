@@ -12,7 +12,7 @@
 .cont.on {
   /* display: block; */
   opacity: 1;
-  z-index: 100;
+  z-index: 10;
 }
 
 /* INTRO STYLE */
@@ -54,7 +54,7 @@
   overflow: hidden;
   position: relative;
   height: 550px;
-  margin-top: 250px;
+  margin-top: 200px;
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -126,6 +126,7 @@
 .cont.portfolio .list-item li a img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .cont.portfolio .list-item li dl {
   margin-top: 30px;
@@ -149,7 +150,7 @@
   transition-property: opacity;
   transition-duration: 1s;
   transition-delay: 1.5s;
-  z-index: 10;
+  z-index: 11;
 }
 .cont.portfolio .btn-move button {
   margin: 0 10px;
@@ -166,7 +167,7 @@
   text-align: center;
   color: #fff;
   cursor: pointer;
-  z-index: 101;
+  z-index: 11;
   transform: translateX(-50%);
   transition: transform 0.3s;
 }
@@ -199,14 +200,49 @@
   opacity: 1;
 }
 
-@media (max-height: 768px) {
+@media screen and (max-height: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
   .cont.portfolio .inner {
     margin-top: 180px;
   }
 }
+
 @media screen and (max-width: 800px) {
+  html,
+  body {
+    font-size: 14px;
+  }
   .cont.portfolio .inner {
     margin-left: 100px;
     margin-right: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  #header .inner {
+    padding: 0 20px;
+  }
+  .cont.portfolio .inner {
+    margin-top: 125px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .cont.portfolio h2 {
+    margin-bottom: 35px;
+  }
+  .cont.portfolio .list-item li {
+    width: 420px;
+  }
+  .cont.portfolio .list-item li a {
+    height: 360px;
+  }
+  .cont.portfolio .btn-move {
+    bottom: 50px;
   }
 }

@@ -1,40 +1,45 @@
-const contPortfolio = document.querySelector(".cont.portfolio");
-const listItem = contPortfolio.querySelector(".list-item ul");
+const contPortfolio = document.querySelectorAll(".cont.portfolio");
+const contType1 = document.querySelector(".cont.type1");
+const contType2 = document.querySelector(".cont.type2");
+const listItem = contPortfolio[0].querySelector(".list-item ul");
 
 let itemCount = 0;
 
 function infoSlide() {
-  const infoContainer = document.querySelectorAll(".cont");
+  const contInfo = document.querySelectorAll(".cont");
   const btnScroll = document.querySelector(".btn.scroll-show");
   const btnNavMenu = document.querySelectorAll("#gnb button");
   let pageCount = 0;
 
-  function pageSwitch() {
-    for (let i = 0; i < infoContainer.length; i++) {
-      if (pageCount !== i) {
-        infoContainer[i].classList.remove("on");
-      } else if (pageCount === i) {
-        infoContainer[i].classList.add("on");
-      }
-    }
-  }
+  // 스크롤 올릴 때
   function moveUp() {
     pageCount--;
     if (pageCount < 0) {
       pageCount = 0;
     }
-    pageSwitch();
+    switchPage();
     listItem.style.left = "0px";
     itemCount = 0;
   }
+  // 스크롤 내릴 때
   function moveDown() {
     pageCount++;
-    if (pageCount > infoContainer.length - 1) {
-      pageCount = infoContainer.length - 1;
+    if (pageCount > contInfo.length - 1) {
+      pageCount = contInfo.length - 1;
     }
-    pageSwitch();
+    switchPage();
     listItem.style.left = "0px";
     itemCount = 0;
+  }
+  // 스크롤마다 클래스 추가/제거
+  function switchPage() {
+    for (let i = 0; i < contInfo.length; i++) {
+      if (pageCount !== i) {
+        contInfo[i].classList.remove("on");
+      } else if (pageCount === i) {
+        contInfo[i].classList.add("on");
+      }
+    }
   }
 
   // 키로 슬라이드 작동
@@ -45,6 +50,7 @@ function infoSlide() {
       moveDown();
     }
   });
+  // 휠로 슬라이드 작동
   document.addEventListener("wheel", function (event) {
     if (event.deltaY < 0) {
       moveUp();
@@ -59,11 +65,11 @@ function infoSlide() {
   // 버튼으로 지정된 페이지 이동
   for (let i = 0; i < btnNavMenu.length; i++) {
     btnNavMenu[i].addEventListener("click", function () {
-      for (j = 0; j < infoContainer.length; j++) {
+      for (j = 0; j < contInfo.length; j++) {
         if (i === j) {
-          infoContainer[j].classList.add("on");
+          contInfo[j].classList.add("on");
         } else {
-          infoContainer[j].classList.remove("on");
+          contInfo[j].classList.remove("on");
         }
       }
     });
@@ -71,7 +77,7 @@ function infoSlide() {
 }
 
 function itemSlide() {
-  const btnMove = contPortfolio.querySelectorAll(".btn-move button");
+  const btnMove = contPortfolio[0].querySelectorAll(".btn-move button");
   const item = listItem.querySelectorAll("li");
   const itemWidth = item[0].offsetWidth;
 
@@ -81,6 +87,7 @@ function itemSlide() {
       itemCount = 0;
     }
     listItem.style.left = "-" + itemCount * itemWidth + "px";
+    console.log("back");
   });
   btnMove[1].addEventListener("click", function () {
     itemCount++;
@@ -88,6 +95,7 @@ function itemSlide() {
       itemCount = item.length - 1;
     }
     listItem.style.left = "-" + itemCount * itemWidth + "px";
+    console.log("go");
   });
 }
 
