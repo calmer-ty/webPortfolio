@@ -8,7 +8,7 @@ let itemCount = 0;
 function infoSlide() {
   const contInfo = document.querySelectorAll(".cont");
   const btnScroll = document.querySelector(".btn.scroll-show");
-  const btnNavMenu = document.querySelectorAll("#gnb button");
+  const btnNavMenu = document.querySelectorAll("#gnb .menu button");
   let pageCount = 0;
 
   // 스크롤 올릴 때
@@ -77,28 +77,33 @@ function infoSlide() {
 }
 
 function itemSlide() {
-  const btnMove = contPortfolio[0].querySelectorAll(".btn-move button");
   const item = listItem.querySelectorAll("li");
   const itemWidth = item[0].offsetWidth;
+  const btnMove = contPortfolio[0].querySelectorAll(".btn-move button");
+
+  function calculationSlide() {
+    listItem.style.left = "-" + itemCount * itemWidth + "px";
+  }
 
   btnMove[0].addEventListener("click", function () {
     itemCount--;
     if (itemCount < 0) {
       itemCount = 0;
     }
-    listItem.style.left = "-" + itemCount * itemWidth + "px";
-    console.log("back");
+    calculationSlide();
   });
   btnMove[1].addEventListener("click", function () {
     itemCount++;
     if (itemCount > item.length - 1) {
       itemCount = item.length - 1;
     }
-    listItem.style.left = "-" + itemCount * itemWidth + "px";
-    console.log("go");
+    calculationSlide();
   });
 }
 
+// window.addEventListener("resize", function () {
+//   itemSlide();
+// });
 function init() {
   infoSlide();
   itemSlide();
