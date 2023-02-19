@@ -88,9 +88,30 @@ body {
   display: block;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   #gnb ul {
     display: none;
+  }
+  .btn-lnb .open {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  #header {
+    line-height: 50px;
+  }
+  #header .inner {
+    height: 50px;
+    padding: 0 20px;
+  }
+  #header #logo {
+    font-size: 2rem;
+  }
+  #gnb ul {
+    display: none;
+  }
+  .btn-lnb button {
+    top: 15px;
   }
   .btn-lnb .open {
     display: block;
