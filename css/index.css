@@ -1,23 +1,17 @@
 /* CONTAINER STYLE */
-.cont {
-  /* display: none; */
-  position: absolute;
+/* .cont {
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   background-color: #efefef;
-  opacity: 0;
   transition: opacity 1s ease-in-out;
-}
-.cont.on {
-  /* display: block; */
-  opacity: 1;
-  z-index: 10;
-}
+} */
 
 /* INTRO STYLE */
 .cont.intro {
+  /* height: 100%; */
+  height: 100vh;
   background-image: url("../images/intro_view.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +25,7 @@
   background-color: rgb(17, 31, 228);
   opacity: 0.2;
 }
-.cont.intro .inner h2 {
+.cont.intro h2 {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -42,30 +36,29 @@
   z-index: 1;
   transform: translateY(-50%);
 }
-.cont.intro .inner h2 span:nth-child(1)::after {
+.cont.intro h2 span:nth-child(1)::after {
   content: "-";
   display: inline-block;
   padding: 0 10px;
 }
 
-/* ABOUT STYLE */
-.about.cont {
-}
-
 /* PORTFOLIO STYLE */
 .cont.portfolio {
-  overflow: hidden;
+  padding: 200px 100px 100px;
+}
+.cont.portfolio.type1 {
+  background-color: #efefef;
+}
+.cont.portfolio.type2 {
+  background-color: #fefefe;
 }
 .cont.portfolio .inner {
   overflow: hidden;
   position: relative;
   height: 550px;
-  margin-top: 200px;
-  margin-left: 200px;
-  margin-right: 200px;
 }
 .cont.portfolio h2 {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
@@ -76,63 +69,25 @@
 .cont.portfolio.type2 h2 {
   text-shadow: 4px 2px 2px #c1eaf0;
 }
-.cont.portfolio h2 .box-word {
-  display: inline-block;
-}
-
-/* h2 effect */
-.cont.portfolio h2 .box-word span {
-  float: left;
-  opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: 1s, 1s;
-}
-.cont.portfolio h2 .left {
-  transform: translateX(-20px);
-}
-.cont.portfolio h2 .right {
-  transform: translateX(20px);
-}
-/* h2 effect active */
-.cont.portfolio.on h2 .box-word span {
-  opacity: 1;
-  transform: translateX(0);
-}
-.cont.portfolio.on h2 .box-word .delay01 {
-  transition-delay: 0.1s;
-}
-.cont.portfolio.on h2 .box-word .delay02 {
-  transition-delay: 0.2s;
-}
 
 .cont.portfolio .list-item ul {
   position: absolute;
-  left: 0;
-  width: 2240px;
-  margin: 0 -30px;
-  transition: left 1s, right 1s;
+  display: flex;
+  transition: transform 0.5s;
 }
-
 .cont.portfolio .list-item li {
   float: left;
   width: 560px;
-  padding: 0 30px;
+  margin-right: 30px;
   box-sizing: border-box;
-  opacity: 0;
-  transform: translateY(200px);
-  transition-property: transform, opacity;
-  transition-duration: 1s, 1s;
-  transition-delay: 0.5s;
 }
-
-.cont.portfolio .list-item li a {
-  position: relative;
+.cont.portfolio .list-item li:last-of-type {
+  margin-right: 0;
 }
-
 .cont.portfolio .list-item a {
   display: block;
-  box-shadow: 10px 5px 5px #ccc;
   position: relative;
+  box-shadow: 10px 5px 5px #ccc;
 }
 .cont.portfolio .list-item a .thumb-item {
   width: 100%;
@@ -179,16 +134,11 @@
 }
 .cont.portfolio .btn-move {
   position: absolute;
-  bottom: 0;
+  top: 100px;
   right: 0;
   border: 1px solid #ccc;
   background-color: #fff;
   border-radius: 25px;
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 1.5s;
-  z-index: 11;
 }
 .cont.portfolio .btn-move button {
   padding: 0 10px;
@@ -204,7 +154,6 @@
   text-align: center;
   color: #fff;
   cursor: pointer;
-  z-index: 11;
   transform: translateX(-50%);
   transition: transform 0.3s;
 }
@@ -249,12 +198,6 @@
   body {
     font-size: 14px;
   }
-  .cont.portfolio .inner {
-    margin-top: 150px;
-  }
-  .cont.portfolio .btn-move {
-    bottom: 10px;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -262,9 +205,14 @@
   body {
     font-size: 14px;
   }
-  .cont.portfolio .inner {
-    margin-left: 100px;
-    margin-right: 100px;
+  .cont.portfolio {
+    padding: 150px 80px 80px;
+  }
+  .cont.portfolio h2 {
+    margin-bottom: 70px;
+  }
+  .cont.portfolio .btn-move {
+    top: 65px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -272,36 +220,29 @@
   body {
     font-size: 12px;
   }
+  .cont.portfolio {
+    padding: 60px 30px 30px;
+  }
+  .cont.portfolio h2 {
+    margin-bottom: 40px;
+  }
+  .cont.portfolio .list-item li {
+    width: 360px;
+  }
+  .cont.portfolio .list-item a {
+    box-shadow: none;
+    height: 360px;
+  }
+  .cont.portfolio .btn-move {
+    display: none;
+  }
   .cont.intro h2 span {
     display: block;
   }
   .cont.intro h2 span:nth-child(1) {
     margin-bottom: 10px;
   }
-  .cont.intro .inner h2 span:nth-child(1)::after {
+  .cont.intro h2 span:nth-child(1)::after {
     display: none;
-  }
-  .cont.portfolio .inner {
-    margin-top: 100px;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .cont.portfolio h2 {
-    margin-bottom: 35px;
-  }
-  .cont.portfolio .list-item li {
-    width: 420px;
-  }
-  .cont.portfolio .list-item li a {
-    height: 360px;
-  }
-  .cont.portfolio .list-item a .cover-item img {
-    width: 150px;
-  }
-  .cont.portfolio .btn-move button {
-    padding: 3px 3px 0;
-  }
-  .cont.portfolio .btn-move button i {
-    font-size: 1.5rem;
   }
 }
