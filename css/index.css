@@ -6,6 +6,7 @@
   top: 0;
   right: 0;
   bottom: 0;
+  background-color: #efefef;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -196,10 +197,9 @@
   cursor: pointer;
 }
 
-/* scroll-show */
-.scroll-show {
+/* scroll-cont */
+.scroll-cont {
   position: absolute;
-  bottom: 3%;
   left: 50%;
   text-align: center;
   color: #fff;
@@ -208,14 +208,21 @@
   transform: translateX(-50%);
   transition: transform 0.3s;
 }
-.scroll-show button:hover {
+.scroll-cont.up {
+  top: 12%;
+}
+.scroll-cont.down {
+  bottom: 3%;
+}
+.scroll-cont button:hover {
   transform: translateY(10px);
 }
-.scroll-show i {
+.scroll-cont i {
   font-size: 3rem;
+  color: rgb(8, 212, 248);
   transition: font-size 0.3s;
 }
-.scroll-show:hover i {
+.scroll-cont:hover i {
   font-size: 3.5rem;
 }
 

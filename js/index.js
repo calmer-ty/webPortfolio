@@ -52,9 +52,11 @@ function itemSlide1() {
 
 function infoSlide() {
   const contInfo = document.querySelectorAll(".cont");
-  const btnScroll = document.querySelector(".btn.scroll-show");
+  const btnScroll = document.querySelectorAll(".btn.scroll-cont");
   const btnNavMenu = document.querySelectorAll("#gnb .menu button");
   let pageCount = 0;
+
+  console.log(btnScroll);
 
   // 스크롤 올릴 때
   function moveUp() {
@@ -89,6 +91,14 @@ function infoSlide() {
     }
   }
   // 키로 슬라이드 작동
+  document.addEventListener("touchmove", function (event) {
+    if (event.key === "ArrowUp") {
+      moveUp();
+    } else if (event.key === "ArrowDown") {
+      moveDown();
+    }
+  });
+  // 터치로 슬라이드 작동
   document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowUp") {
       moveUp();
@@ -104,10 +114,19 @@ function infoSlide() {
       moveDown();
     }
   });
+
+  document.addEventListener("touchstart", moveUp);
+  document.addEventListener("touchend", moveDown);
   // 버튼으로 슬라이드 작동
-  btnScroll.addEventListener("click", function () {
-    moveDown();
-  });
+  // btnScroll[0].addEventListener("click", function () {
+  //   moveUp();
+  //   console.log("up");
+  // });
+  // btnScroll[1].addEventListener("click", function () {
+  //   moveDown();
+  //   console.log("down");
+  // });
+
   // 버튼으로 지정된 페이지 이동
   for (let i = 0; i < btnNavMenu.length; i++) {
     btnNavMenu[i].addEventListener("click", function () {
@@ -121,6 +140,43 @@ function infoSlide() {
     });
   }
 }
+
+// let curPos = 0;
+// let postion = 0;
+// let start_x, end_x;
+// const IMAGE_WIDTH = 375;
+// const images = document.querySelector(".images");
+
+// images.addEventListener("touchstart", touch_start);
+// images.addEventListener("touchend", touch_end);
+
+// function prev() {
+//   if (curPos > 0) {
+//     postion += IMAGE_WIDTH;
+//     images.style.transform = `translateX(${postion}px)`;
+//     curPos = curPos - 1;
+//   }
+// }
+// function next() {
+//   if (curPos < 3) {
+//     postion -= IMAGE_WIDTH;
+//     images.style.transform = `translateX(${postion}px)`;
+//     curPos = curPos + 1;
+//   }
+// }
+
+// function touch_start(event) {
+//   start_x = event.touches[0].pageX;
+// }
+
+// function touch_end(event) {
+//   end_x = event.changedTouches[0].pageX;
+//   if (start_x > end_x) {
+//     next();
+//   } else {
+//     prev();
+//   }
+// }
 
 function init() {
   infoSlide();

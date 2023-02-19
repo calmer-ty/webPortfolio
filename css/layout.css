@@ -41,7 +41,7 @@ body {
   margin-left: 80px;
 }
 #gnb li button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
   cursor: pointer;
@@ -105,13 +105,17 @@ body {
     padding: 0 20px;
   }
   #header #logo {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   #gnb ul {
     display: none;
   }
   .btn-lnb button {
-    top: 15px;
+    top: 18px;
+  }
+  .btn-lnb button i {
+    top: 20px;
+    font-size: 1.5rem;
   }
   .btn-lnb .open {
     display: block;
