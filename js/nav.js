@@ -2,7 +2,7 @@ function navTransform() {
   const header = document.querySelector("#header");
   const lnbOpen = header.querySelector(".btn-lnb .open");
   const lnbClose = header.querySelector(".btn-lnb .close");
-  const btnNavMenu = document.querySelectorAll("#gnb .menu button");
+  const btnNavMenu = document.querySelectorAll("#gnb .menu a");
 
   // lnb 열림
   lnbOpen.addEventListener("click", function () {

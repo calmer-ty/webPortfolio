@@ -42,7 +42,7 @@ body {
   float: left;
   margin-left: 80px;
 }
-#gnb li button {
+#gnb li a {
   font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
