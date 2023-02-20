@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-body {
-  min-width: 1280px;
+#wrap {
+  min-width: 1024px;
 }
 /* 공통 */
 img {
