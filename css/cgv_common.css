@@ -1,3 +1,6 @@
+body {
+  min-width: 1024px;
+}
 #header #logo {
   height: 60px;
 }
@@ -14,6 +17,7 @@
 }
 #header .header-top .inner {
   padding: 20px 0;
+  margin: 0 20px;
 }
 #header .header-top .list-member li {
   float: left;
@@ -22,6 +26,9 @@
 }
 #header .header-top .list-member li.ad {
   margin: 5px 20px;
+}
+#header .header-top .list-member li:last-of-type {
+  margin-right: 0;
 }
 #header .header-top .list-member li * {
   display: block;
@@ -38,6 +45,9 @@
 #header .header-bot {
   border-top: 1px solid #ddd;
   border-bottom: 2px solid #fb4357;
+}
+#header .header-bot .inner {
+  padding: 0 20px;
 }
 #header .header-bot .box-srch {
   margin: 10px 0;
@@ -76,10 +86,6 @@
   display: block;
   clear: both;
 }
-/* #footer [class^="list"] dt {
-  display: block;
-  background-color: #ccc;
-} */
 #footer [class^="list"] dt::after {
   content: ":";
   display: inline-block;

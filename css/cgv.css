@@ -5,15 +5,20 @@
   background-color: #000;
   text-align: center;
 }
+.slide-main video {
+  width: 100%;
+}
 
 /* CONT - COMMON */
-.cont {
+.cont,
+.cont2 {
   padding: 60px 0;
 }
 .cont .inner,
 .cont2 .inner {
-  width: 1000px;
+  width: 980px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 .cont-top {
   margin-bottom: 25px;
@@ -46,7 +51,7 @@
 }
 .cont ul[class^="list"],
 .cont2 ul[class^="list"] {
-  margin: 0 -20px;
+  margin: 0 -10px;
 }
 .cont ul[class^="list"]::after {
   content: "";
@@ -55,7 +60,7 @@
 }
 .cont ul[class^="list"] li {
   float: left;
-  padding: 0 20px;
+  padding: 0 10px;
   box-sizing: border-box;
 }
 .cont ul[class^="list"] li figure .thumb-img {
@@ -66,7 +71,8 @@
 .cont-bot .thumb {
   position: relative;
 }
-.cont-bot .box-details {
+.cont-bot .box-details,
+.cont-bot .cover-thumb {
   position: absolute;
   display: none;
   left: 0;
@@ -75,36 +81,38 @@
   height: 100%;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.5);
-  /* opacity: 0.3; */
 }
-.cont-bot .thumb:hover .box-details {
+.cont-bot .thumb:hover .box-details,
+.cont-bot .thumb:hover .cover-thumb {
   display: block;
-  margin: auto;
 }
 .cont-bot .thumb i {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.cont-bot .box-details a {
+/* .cont-bot .cover-thumb a */
+.cont-bot .cover-thumb .box-btn {
   position: absolute;
-  /* top: 20px; */
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cont-bot .cover-thumb .box-btn a {
   display: block;
-  width: 100px;
-  height: 40px;
+  width: 120px;
+  height: 35px;
   border-radius: 5px;
-  background-color: #fff;
   font-size: 0.8rem;
   font-weight: 700;
   text-align: center;
   line-height: 3;
-  transform: translateX(-50%);
 }
-.cont-bot .box-details a.detail-view {
-  top: 70px;
+.cont-bot .cover-thumb a.detail-view {
+  margin-bottom: 10px;
+  background-color: #fff;
 }
-.cont-bot .box-details a.ticketing {
+.cont-bot .cover-thumb a.ticketing {
   top: 130px;
   background-color: #fb4357;
   color: #fff;
@@ -128,9 +136,11 @@
 .cont.chart .tab-movie li {
   float: left;
   margin-right: 20px;
+}
+.cont.chart .tab-movie button {
   font-size: 1.7rem;
 }
-.cont.chart .tab-movie li.on {
+.cont.chart .tab-movie li.on button {
   font-weight: 700;
 }
 .cont.chart ul[class^="list"] li {
@@ -156,8 +166,6 @@
 }
 .cont.event ul[class^="list"] li a {
   display: block;
-  /* width: 300px;
-  height: 200px; */
   overflow: hidden;
   border-radius: 15px;
 }
@@ -209,8 +217,11 @@
 .cont2.giftcon .wrap-list {
   float: left;
   width: 33.3%;
-  padding: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
+}
+.cont2.giftcon .wrap-list:last-of-type {
+  padding-right: 0;
 }
 .cont2.giftcon .list-giftcon {
   padding: 30px;
@@ -315,7 +326,6 @@
 }
 .cont2.notice .box-info .notice dd p {
   float: left;
-  /* max-width: 300px; */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
