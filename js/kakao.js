@@ -23,12 +23,12 @@ function mainSlide() {
 
 let listCount = 0;
 
-function itemSlide(target) {
-  const btnPrev = target.querySelector(".btn-slide.prev");
-  const btnNext = target.querySelector(".btn-slide.next");
-  const itemList = target.querySelectorAll(".list-item ul");
+function itemSlide(cont, width) {
+  const ITEM_WIDTH = width;
 
-  const itemWidth = itemList[0].querySelector("li").offsetWidth;
+  const btnPrev = cont.querySelector(".btn-move .prev");
+  const btnNext = cont.querySelector(".btn-move .next");
+  const itemList = cont.querySelectorAll(".list-item ul");
 
   btnPrev.addEventListener("click", function () {
     listCount--;
@@ -36,7 +36,7 @@ function itemSlide(target) {
       if (listCount < 0) {
         listCount = 0;
       }
-      itemList[i].style.left = "-" + listCount * itemWidth + "px";
+      itemList[i].style.transform = `translateX(-${listCount * ITEM_WIDTH}px)`;
     }
   });
   btnNext.addEventListener("click", function () {
@@ -45,21 +45,21 @@ function itemSlide(target) {
       if (listCount > itemList[i].querySelectorAll("li").length - 1) {
         listCount = itemList[i].querySelectorAll("li").length - 1;
       }
-      itemList[i].style.left = "-" + listCount * itemWidth + "px";
+      itemList[i].style.transform = `translateX(-${listCount * ITEM_WIDTH}px)`;
     }
   });
 }
 
-function itemSelect(target) {
-  const itemSelector = target.querySelectorAll(".tab-list li");
-  const itemList = target.querySelectorAll(".list-item ul");
+function itemSelect(cont) {
+  const itemSelector = cont.querySelectorAll(".tab-list li");
+  const itemList = cont.querySelectorAll(".list-item ul");
 
   for (let i = 0; i < itemSelector.length; i++) {
     itemSelector[i].addEventListener("click", function () {
       for (j = 0; j < itemList.length; j++) {
         if (i === j) {
           listCount = 0;
-          itemList[j].style.left = "0px";
+          itemList[j].style.transform = `translateX(0px)`;
           itemList[j].classList.add("on");
           itemSelector[j].classList.add("on");
         } else {
@@ -95,8 +95,8 @@ function itemSelect(target) {
 
 function init() {
   mainSlide();
-  itemSlide(contService);
-  itemSlide(contSocial);
+  itemSlide(contService, 390);
+  itemSlide(contSocial, 510);
   itemSelect(contService);
 }
 init();

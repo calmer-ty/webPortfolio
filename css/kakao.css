@@ -4,11 +4,6 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 .cont {
   margin-bottom: 100px;
 }
@@ -16,6 +11,7 @@ img {
   position: relative;
   padding: 0 100px;
 }
+
 /* TITLE CONTAINER */
 .cont-top {
   margin-bottom: 40px;
@@ -29,15 +25,6 @@ img {
 .cont-top h4 {
   font-size: 2.5rem;
   letter-spacing: -0.04rem;
-}
-/* BUTTON ICON STYLE */
-.btn-slide {
-  position: absolute;
-  cursor: pointer;
-}
-.btn-slide i {
-  font-size: 3.5rem;
-  color: gold;
 }
 
 .slider {
@@ -61,30 +48,10 @@ img {
   background: url("../images/kakao/img_slide2.png") center/cover fixed;
 }
 
-/* item-list common */
+/* LIST-ITEM STYLE */
 .list-item {
   overflow: hidden;
   position: relative;
-}
-.list-item ul {
-  margin: 0 -15px;
-}
-.list-item ul::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.list-item ul.slide {
-  position: absolute;
-  left: 0;
-  transition: left 1s, right 1s;
-}
-.list-item ul.slide li {
-  padding: 0 15px;
-  box-sizing: border-box;
-}
-.list-item li {
-  float: left;
 }
 .list-item a {
   display: block;
@@ -100,7 +67,21 @@ img {
   line-height: 1.7;
 }
 
-/* tech */
+/* BTN STYLE */
+.cont.slide .cont-bot {
+  position: relative;
+}
+.cont.slide .btn-move button {
+  position: absolute;
+  /* top: 37%; */
+  transform: translateY(-50%);
+  color: gold;
+}
+.cont.slide .btn-move button i {
+  font-size: 2.5rem;
+}
+
+/* CONT - TECH */
 .cont.tech .cont-top {
   padding: 0 100px;
 }
@@ -133,16 +114,15 @@ img {
   margin: 0 100px;
 }
 .cont.tech .list-item li {
+  float: left;
   width: calc(50% - 30px);
   margin-top: 60px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-/* service */
-.cont.service .cont-bot {
-  /* position: relative; */
-}
+/* CONT - SERVICE */
+
 .cont.service .tab-list {
   float: left;
   width: 200px;
@@ -161,7 +141,6 @@ img {
 .cont.service .tab-list li.on button {
   font-weight: 700;
 }
-
 .cont.service .list-item {
   float: right;
   width: 80%;
@@ -169,10 +148,9 @@ img {
 }
 .cont.service .list-item ul {
   display: none;
-  width: calc(360 * 6px);
 }
 .cont.service .list-item ul.on {
-  display: block;
+  display: flex;
 }
 .cont.service .list-item li {
   width: 360px;
@@ -180,22 +158,15 @@ img {
 .cont.service .list-item a {
   height: 360px;
 }
-.cont.service .list-item img {
-  object-fit: cover;
-}
 
-.cont.service .btn-slide {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.cont.service .btn-slide.prev {
+.cont.service .btn-move .prev {
   left: 20%;
 }
-.cont.service .btn-slide.next {
-  right: 3%;
+.cont.service .btn-move .next {
+  right: 0;
 }
 
-/* news */
+/* CONT - NEWS */
 .cont.news {
   position: relative;
 }
@@ -215,26 +186,24 @@ img {
   line-height: 1.7;
 }
 
-/* social */
+/* CONT - SOCIAL */
 .cont.social .list-item {
   height: 400px;
-}
-.cont.social .list-item ul {
-  width: calc(480 * 6px);
 }
 .cont.social .list-item li {
   width: 480px;
 }
-.cont.social .btn-slide {
-  top: 37%;
+.cont.slide .btn-move button {
+  top: 33%;
 }
-.cont.social .btn-slide.prev {
-  left: 2%;
+.cont.social .btn-move .prev {
+  left: 0%;
 }
-.cont.social .btn-slide.next {
-  right: 2%;
+.cont.social .btn-move .next {
+  right: 0%;
 }
 
+/* CONT - INQUIRY */
 .cont.inquiry {
   position: relative;
   height: 300px;
@@ -269,6 +238,7 @@ img {
   padding: 10px 20px;
 }
 
+/* FOOTER */
 footer {
   padding: 40px;
   text-align: center;
@@ -324,10 +294,9 @@ footer .copyright {
   color: #aaa;
 }
 
+/* MEDIA QURTY */
 @media screen and (max-width: 1280px) {
   .cont.tech .list-item {
-    /* margin-left: 0; */
-    /* padding: 0 50px; */
     margin: 0 50px;
   }
   .cont.slide {
@@ -362,22 +331,22 @@ footer .copyright {
     float: none;
     width: 100%;
   }
-  .cont.service .btn-slide {
-    top: 58%;
+  .cont.service .btn-move button {
+    top: 50%;
   }
-  .cont.service .btn-slide.prev {
+  .cont.service .btn-move .prev {
     left: 0%;
   }
-  .cont.service .btn-slide.next {
+  .cont.service .btn-move .next {
     right: 0%;
   }
 
-  .cont.social .btn-slide.prev {
+  /* .cont.social .btn-slide.prev {
     left: 0%;
   }
   .cont.social .btn-slide.next {
     right: 0%;
-  }
+  } */
 }
 
 @media screen and (max-width: 800px) {

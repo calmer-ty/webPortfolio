@@ -1,630 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kakao - 김태연</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/default.css" />
-    <link rel="stylesheet" href="./css/kakao.css" />
-    <!-- Google Font -->
-    <link href="" rel="stylesheet" />
-    <!-- 햄버거 로고 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <div id="wrap">
-      <header id="header">
-        <div class="inner">
-          <h1 id="logo">kakao</h1>
-          <nav id="gnb">
-            <ul>
-              <li><button>카카오</button></li>
-              <li><button>뉴스</button></li>
-              <li><button>기술과 서비스</button></li>
-              <li><button>약속과 책임</button></li>
-            </ul>
-          </nav>
-          <div class="btn-lnb">
-            <button class="open">
-              <i class="material-icons">menu</i>
-            </button>
-            <button class="close">
-              <i class="material-icons">close</i>
-            </button>
-          </div>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kakao - 김태연</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/default.css" />
+  <link rel="stylesheet" href="./css/kakao.css" />
+  <!-- Google Font -->
+  <link href="" rel="stylesheet" />
+  <!-- 햄버거 로고 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
 
-      <!-- slider -->
-      <div class="slider mb100">
-        <div class="item"></div>
-        <div class="item"></div>
-      </div>
-
-      <!-- tech -->
-      <div class="cont tech">
-        <!-- cont tech => tech -->
-        <div class="cont-top">
-          <h3>기술</h3>
-          <h4>당신의 오늘을 변화시키는 카카오 기술</h4>
-        </div>
-        <div class="cont-bot">
-          <div class="tit-list">
-            <div class="desc">
-              <h5>카카오의 다양한 기술 혁신</h5>
-              <h6>
-                미래를 만들어가는 카카오의 다양하고 멋진 기술과 카카오만의
-                창의성을 만나보세요.
-              </h6>
-            </div>
-          </div>
-          <div class="list-item">
-            <ul class="clearfix">
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/tech_item_1.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>오픈소스를 요리하다, Olive Platform</h5>
-                    <div class="desc">
-                      카카오 서비스에서 사용하는 오픈소스를 올바르게 사용하고
-                      관리하기 위해 개발되었습니다.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/tech_item_2.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>AI+일상=Tech&</h5>
-                    <div class="desc">
-                      카카오엔터프라이즈가 AI 기술을 개발하고 발전해나가는
-                      과정에서 바라본 세상의 모든 것과 크루들의 생생한 업무
-                      라이프를 전합니다.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/tech_item_3.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>사람과 기술이 함께, 카카오테크</h5>
-                    <div class="desc">
-                      카카오테크가 준비한 일상을 바꾸는 기술들을 직접
-                      경험해보세요. 사람과 사람, 사람과 기술을 한 층 더 가깝게
-                      연결함으로써 어제보다 더 나은 세상을 함께 만들어 갈 분들을
-                      찾습니다.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/tech_item_4.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>꿈꾸던 세상을 현실로, 카카오디벨로퍼스</h5>
-                    <div class="desc">
-                      개발자들이 각자의 방식으로 카카오 서비스와 연계하여 더
-                      나은 세상을 꿈꾸고, 창조하고, 공유할 수 있도록 다양한 오픈
-                      API와 개발 도구를 지원합니다.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- service -->
-      <div class="cont slide service">
-        <div class="cont-top">
-          <h3>Service</h3>
-          <h4>카카오가 제공하는 서비스입니다</h4>
-        </div>
-        <div class="cont-bot clearfix">
-          <ul class="tab-list clearfix">
-            <li class="on"><button>커뮤니케이션</button></li>
-            <li><button>라이프</button></li>
-            <li><button>커머스</button></li>
-          </ul>
-          <div class="list-item clearfix">
-            <ul class="slide on">
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/communication_item_1.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/communication_item_2.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 위한 다음앱</h5>
-                    <div class="desc">
-                      실시간 맞춤 뉴스, 다양한 관심사 콘텐츠, 영상을 보며
-                      웹서핑도 즐기는 플레이어까지 스마트한 모바일 라이프를
-                      즐겨보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/communication_item_3.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>글이 작품이 되는 공간, 브런치</h5>
-                    <div class="desc">
-                      좋은 글을 쓰고 싶은 모든 이들을 위해 준비했습니다. 글이
-                      작품이 되는 공간, 브런치를 만나 보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/communication_item_4.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나의 이야기가 빛나는 공간, 카카오스토리</h5>
-                    <div class="desc">
-                      나의 일상은 가볍게 기록하고 알고 싶은 소식은 한 번에
-                      받아보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/communication_item_5.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>모든 이야기의 시작, Daum 카페</h5>
-                    <div class="desc">
-                      지금, 우리들의 이야기가 궁금하다면 Daum 카페와 함께
-                      하세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/communication_item_6.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>함께 만드는 더 좋은 세상, 카카오같이가치</h5>
-                    <div class="desc">
-                      누구나 공익프로젝트를 제안하고 참여할 수 있는 같이기부, 더
-                      좋은 세상을 꿈꾼다면 지금 함께해요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-            <ul class="slide">
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/life_item_1.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/life_item_2.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/life_item_3.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/life_item_4.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/life_item_5.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/life_item_6.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-            <ul class="slide">
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/commerce_item_1.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/commerce_item_2.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/commerce_item_3.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/commerce_item_4.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/commerce_item_5.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="images/kakao/commerce_item_6.jpg" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
-                    <div class="desc">
-                      블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
-                      보세요.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-          </div>
-          <button class="btn-slide prev">
-            <i class="material-icons">chevron_left</i>
-          </button>
-          <button class="btn-slide next">
-            <i class="material-icons">chevron_right</i>
-          </button>
-        </div>
-      </div>
-
-      <!-- news -->
-      <div class="cont news mb100">
-        <div class="box-txt">
-          <div class="cont-top">
-            <h3>news</h3>
-            <h4>가장 빠른 카카오 새소식 업데이트</h4>
-          </div>
-          <div class="desc">
-            카카오는 카카오 구성원을 크루(Krew)라고 지칭합니다. 크루는
-            카카오(Kakao)라는 한 배를 탄 선원(Crew)이자 가보지 않은 길을 함께
-            항해하는 동료들을 상징하는 표현입니다.
-          </div>
-        </div>
-      </div>
-
-      <!-- social -->
-      <div class="cont slide social">
-        <div class="cont-top">
-          <h3>소셜임팩트</h3>
-        </div>
-        <div class="cont-bot">
-          <div class="list-item">
-            <ul class="slide">
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/social_item_1.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>혁신가 레이블, 카카오임팩트 펠로우십</h5>
-                    <div class="desc">
-                      더 나은 세상을 기다리지 않는 사람들 카카오임팩트 펠로우십
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/social_item_2.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>청소년 디지털 시민 교육, 사이좋은 디지털 세상</h5>
-                    <div class="desc">
-                      디지털 기기로 세상을 배우는 청소년들이 안전한 디지털
-                      환경에서 건강한 생각을 키우며 더 나은 시민으로 성장할 수
-                      있도록 필요한 가치를 교육합니다.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/social_item_3.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>꿈을 향해 달리는 Kakao 트랙</h5>
-                    <div class="desc">
-                      디지털 기기로 세상을 배우는 청소년들이 안전한 디지털
-                      환경에서 건강한 생각을 키우며 더 나은 시민으로 성장할 수
-                      있도록 필요한 가치를 교육합니다.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/social_item_4.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>당신에게 'IT'란? Show me the IT</h5>
-                    <div class="desc">
-                      Information Technology 의 약자가 아닌 It 인칭대명사로 먼저
-                      읽히는 중.고등학생들을 위한 카카오 진로 체험 프로그램
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/social_item_5.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>제주 지역 스타트업 엑셀러레이션 - 발굴,보육,투자</h5>
-                    <div class="desc">
-                      2015년부터 2020년까지 제주창조경제혁신센터의 창업교육
-                      프로그램에 9,677명이 참여했으며, 150여개의 보육기업들이 총
-                      691억원의 투자를 유치했습니다.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <a href="#"
-                    ><img src="./images/kakao/social_item_6.png" alt=""
-                  /></a>
-                  <figcaption>
-                    <h5>세상을 선하게 바꾸는 실천, 다가치프로젝트</h5>
-                    <div class="desc">
-                      먼저 기부하고, 실천하며 세상과 함께 하는 방법을
-                      고민합니다.
-                    </div>
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-          </div>
-          <button class="btn-slide prev">
-            <i class="material-icons">chevron_left</i>
-          </button>
-          <button class="btn-slide next">
-            <i class="material-icons">chevron_right</i>
-          </button>
-        </div>
-      </div>
-
-      <!-- inquiry -->
-      <div class="cont inquiry">
-        <div class="box-txt">
-          <h3>
-            무엇이든 물어보세요. <br />
-            카카오가 성심성의껏 답변해드리겠습니다.
-          </h3>
-          <a href="#">문의하기</a>
-        </div>
-      </div>
-
-      <!-- footer -->
-      <footer>
-        <nav id="fnb">
-          <ul class="clearfix">
-            <li>
-              <h5><button>카카오</button></h5>
-              <ul class="sub-menu">
-                <li><a href="#">카카오문화</a></li>
-                <li><a href="#">공동체</a></li>
-                <li><a href="#">히스토리</a></li>
-              </ul>
-            </li>
-            <li class="small">
-              <h5><button>뉴스</button></h5>
-            </li>
-            <li>
-              <h5><button>기술과 서비스</button></h5>
-              <ul class="sub-menu">
-                <li><a href="#">기술</a></li>
-                <li><a href="#">서비스</a></li>
-              </ul>
-            </li>
-            <li>
-              <h5><button>약속과 책임</button></h5>
-              <ul class="sub-menu">
-                <li><a href="#">ESG</a></li>
-                <li><a href="#">소셜임팩트</a></li>
-                <li><a href="#">디지털 권리</a></li>
-                <li><a href="#">AI 윤리</a></li>
-              </ul>
-            </li>
-            <li>
-              <h5><button>투자정보</button></h5>
-              <ul class="sub-menu">
-                <li><a href="#">기업지배구조</a></li>
-                <li><a href="#">주가정보</a></li>
-                <li><a href="#">재무정보</a></li>
-                <li><a href="#">IR행사</a></li>
-                <li><a href="#">공시정보</a></li>
-                <li><a href="#">공고</a></li>
-              </ul>
-            </li>
-            <li>
-              <h5><button>고객센터</button></h5>
-              <ul class="sub-menu active">
-                <li><a href="#">카카오 고객센터</a></li>
-                <li><a href="#">Daum 고객센터</a></li>
-                <li><a href="#">카카오문화</a></li>
-              </ul>
-            </li>
-            <li class="small">
-              <h5><button>인재영입</button></h5>
-            </li>
-            <li class="small">
-              <h5><button>카카오계정</button></h5>
-            </li>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <h1 id="logo">kakao</h1>
+        <nav id="gnb">
+          <ul>
+            <li><button>카카오</button></li>
+            <li><button>뉴스</button></li>
+            <li><button>기술과 서비스</button></li>
+            <li><button>약속과 책임</button></li>
           </ul>
         </nav>
-        <div class="f-etc">
-          <ul class="clearfix">
-            <li class="small"><a href="#">이용약관</a></li>
-            <li class="large">
-              <a href="#" class="bk">위치기반서비스이용약관</a>
-            </li>
-            <li><a href="#" class="bk">개인정보처리방침</a></li>
-            <li class="small"><a href="#">운영정책</a></li>
-            <li><a href="#">청소년보호정책</a></li>
-            <li><a href="#">권리침해신고안내</a></li>
-            <li class="small"><a href="#">공지사항</a></li>
-            <li><a href="#">사이버윤리실</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
+        <div class="btn-lnb">
+          <button class="open">
+            <i class="material-icons">menu</i>
+          </button>
+          <button class="close">
+            <i class="material-icons">close</i>
+          </button>
         </div>
-        <div class="copyright">© Taeyeon Corp. All rights reserved.</div>
-      </footer>
+      </div>
+    </header>
+
+    <!-- slider -->
+    <div class="slider mb100">
+      <div class="item"></div>
+      <div class="item"></div>
     </div>
 
-    <script src="js/nav.js"></script>
-    <script src="js/kakao.js"></script>
-  </body>
+    <!-- tech -->
+    <div class="cont tech">
+      <!-- cont tech => tech -->
+      <div class="cont-top">
+        <h3>기술</h3>
+        <h4>당신의 오늘을 변화시키는 카카오 기술</h4>
+      </div>
+      <div class="cont-bot">
+        <div class="tit-list">
+          <div class="desc">
+            <h5>카카오의 다양한 기술 혁신</h5>
+            <h6>
+              미래를 만들어가는 카카오의 다양하고 멋진 기술과 카카오만의
+              창의성을 만나보세요.
+            </h6>
+          </div>
+        </div>
+        <div class="list-item">
+          <ul class="normal clearfix">
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/tech_item_1.png" alt="" /></a>
+                <figcaption>
+                  <h5>오픈소스를 요리하다, Olive Platform</h5>
+                  <div class="desc">
+                    카카오 서비스에서 사용하는 오픈소스를 올바르게 사용하고
+                    관리하기 위해 개발되었습니다.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/tech_item_2.png" alt="" /></a>
+                <figcaption>
+                  <h5>AI+일상=Tech&</h5>
+                  <div class="desc">
+                    카카오엔터프라이즈가 AI 기술을 개발하고 발전해나가는
+                    과정에서 바라본 세상의 모든 것과 크루들의 생생한 업무
+                    라이프를 전합니다.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/tech_item_3.png" alt="" /></a>
+                <figcaption>
+                  <h5>사람과 기술이 함께, 카카오테크</h5>
+                  <div class="desc">
+                    카카오테크가 준비한 일상을 바꾸는 기술들을 직접
+                    경험해보세요. 사람과 사람, 사람과 기술을 한 층 더 가깝게
+                    연결함으로써 어제보다 더 나은 세상을 함께 만들어 갈 분들을
+                    찾습니다.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/tech_item_4.png" alt="" /></a>
+                <figcaption>
+                  <h5>꿈꾸던 세상을 현실로, 카카오디벨로퍼스</h5>
+                  <div class="desc">
+                    개발자들이 각자의 방식으로 카카오 서비스와 연계하여 더
+                    나은 세상을 꿈꾸고, 창조하고, 공유할 수 있도록 다양한 오픈
+                    API와 개발 도구를 지원합니다.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- service -->
+    <div class="cont slide service">
+      <div class="cont-top">
+        <h3>Service</h3>
+        <h4>카카오가 제공하는 서비스입니다</h4>
+      </div>
+      <div class="cont-bot clearfix">
+        <ul class="tab-list clearfix">
+          <li class="on"><button>커뮤니케이션</button></li>
+          <li><button>라이프</button></li>
+          <li><button>커머스</button></li>
+        </ul>
+        <div class="list-item clearfix">
+          <ul class="slide on">
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/communication_item_1.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/communication_item_2.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 위한 다음앱</h5>
+                  <div class="desc">
+                    실시간 맞춤 뉴스, 다양한 관심사 콘텐츠, 영상을 보며
+                    웹서핑도 즐기는 플레이어까지 스마트한 모바일 라이프를
+                    즐겨보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/communication_item_3.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>글이 작품이 되는 공간, 브런치</h5>
+                  <div class="desc">
+                    좋은 글을 쓰고 싶은 모든 이들을 위해 준비했습니다. 글이
+                    작품이 되는 공간, 브런치를 만나 보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/communication_item_4.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나의 이야기가 빛나는 공간, 카카오스토리</h5>
+                  <div class="desc">
+                    나의 일상은 가볍게 기록하고 알고 싶은 소식은 한 번에
+                    받아보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/communication_item_5.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>모든 이야기의 시작, Daum 카페</h5>
+                  <div class="desc">
+                    지금, 우리들의 이야기가 궁금하다면 Daum 카페와 함께
+                    하세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/communication_item_6.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>함께 만드는 더 좋은 세상, 카카오같이가치</h5>
+                  <div class="desc">
+                    누구나 공익프로젝트를 제안하고 참여할 수 있는 같이기부, 더
+                    좋은 세상을 꿈꾼다면 지금 함께해요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <ul class="slide">
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/life_item_1.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/life_item_2.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/life_item_3.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/life_item_4.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/life_item_5.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/life_item_6.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <ul class="slide">
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/commerce_item_1.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/commerce_item_2.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/commerce_item_3.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/commerce_item_4.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/commerce_item_5.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="images/kakao/commerce_item_6.jpg" alt="" /></a>
+                <figcaption>
+                  <h5>나를 가장 잘 표현하는 곳, 티스토리</h5>
+                  <div class="desc">
+                    블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해
+                    보세요.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-move">
+          <button class="prev">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <button class="next">
+            <i class="material-icons">chevron_right</i>
+          </button>
+        </div>
+
+        <!-- <button class="btn-move prev">
+          <i class="material-icons">chevron_left</i>
+        </button>
+        <button class="btn-move next">
+          <i class="material-icons">chevron_right</i>
+        </button> -->
+      </div>
+    </div>
+
+    <!-- news -->
+    <div class="cont news mb100">
+      <div class="box-txt">
+        <div class="cont-top">
+          <h3>news</h3>
+          <h4>가장 빠른 카카오 새소식 업데이트</h4>
+        </div>
+        <div class="desc">
+          카카오는 카카오 구성원을 크루(Krew)라고 지칭합니다. 크루는
+          카카오(Kakao)라는 한 배를 탄 선원(Crew)이자 가보지 않은 길을 함께
+          항해하는 동료들을 상징하는 표현입니다.
+        </div>
+      </div>
+    </div>
+
+    <!-- social -->
+    <div class="cont slide social">
+      <div class="cont-top">
+        <h3>소셜임팩트</h3>
+      </div>
+      <div class="cont-bot">
+        <div class="list-item">
+          <ul class="slide">
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/social_item_1.png" alt="" /></a>
+                <figcaption>
+                  <h5>혁신가 레이블, 카카오임팩트 펠로우십</h5>
+                  <div class="desc">
+                    더 나은 세상을 기다리지 않는 사람들 카카오임팩트 펠로우십
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/social_item_2.png" alt="" /></a>
+                <figcaption>
+                  <h5>청소년 디지털 시민 교육, 사이좋은 디지털 세상</h5>
+                  <div class="desc">
+                    디지털 기기로 세상을 배우는 청소년들이 안전한 디지털
+                    환경에서 건강한 생각을 키우며 더 나은 시민으로 성장할 수
+                    있도록 필요한 가치를 교육합니다.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/social_item_3.png" alt="" /></a>
+                <figcaption>
+                  <h5>꿈을 향해 달리는 Kakao 트랙</h5>
+                  <div class="desc">
+                    디지털 기기로 세상을 배우는 청소년들이 안전한 디지털
+                    환경에서 건강한 생각을 키우며 더 나은 시민으로 성장할 수
+                    있도록 필요한 가치를 교육합니다.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/social_item_4.png" alt="" /></a>
+                <figcaption>
+                  <h5>당신에게 'IT'란? Show me the IT</h5>
+                  <div class="desc">
+                    Information Technology 의 약자가 아닌 It 인칭대명사로 먼저
+                    읽히는 중.고등학생들을 위한 카카오 진로 체험 프로그램
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/social_item_5.png" alt="" /></a>
+                <figcaption>
+                  <h5>제주 지역 스타트업 엑셀러레이션 - 발굴,보육,투자</h5>
+                  <div class="desc">
+                    2015년부터 2020년까지 제주창조경제혁신센터의 창업교육
+                    프로그램에 9,677명이 참여했으며, 150여개의 보육기업들이 총
+                    691억원의 투자를 유치했습니다.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="#"><img class="thumb-item" src="./images/kakao/social_item_6.png" alt="" /></a>
+                <figcaption>
+                  <h5>세상을 선하게 바꾸는 실천, 다가치프로젝트</h5>
+                  <div class="desc">
+                    먼저 기부하고, 실천하며 세상과 함께 하는 방법을
+                    고민합니다.
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <!-- <button class="btn-slide prev">
+          <i class="material-icons">chevron_left</i>
+        </button>
+        <button class="btn-slide next">
+          <i class="material-icons">chevron_right</i>
+        </button> -->
+        <div class="btn-move">
+          <button class="prev">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <button class="next">
+            <i class="material-icons">chevron_right</i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- inquiry -->
+    <div class="cont inquiry">
+      <div class="box-txt">
+        <h3>
+          무엇이든 물어보세요. <br />
+          카카오가 성심성의껏 답변해드리겠습니다.
+        </h3>
+        <a href="#">문의하기</a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <nav id="fnb">
+        <ul class="clearfix">
+          <li>
+            <h5><button>카카오</button></h5>
+            <ul class="sub-menu">
+              <li><a href="#">카카오문화</a></li>
+              <li><a href="#">공동체</a></li>
+              <li><a href="#">히스토리</a></li>
+            </ul>
+          </li>
+          <li class="small">
+            <h5><button>뉴스</button></h5>
+          </li>
+          <li>
+            <h5><button>기술과 서비스</button></h5>
+            <ul class="sub-menu">
+              <li><a href="#">기술</a></li>
+              <li><a href="#">서비스</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5><button>약속과 책임</button></h5>
+            <ul class="sub-menu">
+              <li><a href="#">ESG</a></li>
+              <li><a href="#">소셜임팩트</a></li>
+              <li><a href="#">디지털 권리</a></li>
+              <li><a href="#">AI 윤리</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5><button>투자정보</button></h5>
+            <ul class="sub-menu">
+              <li><a href="#">기업지배구조</a></li>
+              <li><a href="#">주가정보</a></li>
+              <li><a href="#">재무정보</a></li>
+              <li><a href="#">IR행사</a></li>
+              <li><a href="#">공시정보</a></li>
+              <li><a href="#">공고</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5><button>고객센터</button></h5>
+            <ul class="sub-menu active">
+              <li><a href="#">카카오 고객센터</a></li>
+              <li><a href="#">Daum 고객센터</a></li>
+              <li><a href="#">카카오문화</a></li>
+            </ul>
+          </li>
+          <li class="small">
+            <h5><button>인재영입</button></h5>
+          </li>
+          <li class="small">
+            <h5><button>카카오계정</button></h5>
+          </li>
+        </ul>
+      </nav>
+      <div class="f-etc">
+        <ul class="clearfix">
+          <li class="small"><a href="#">이용약관</a></li>
+          <li class="large">
+            <a href="#" class="bk">위치기반서비스이용약관</a>
+          </li>
+          <li><a href="#" class="bk">개인정보처리방침</a></li>
+          <li class="small"><a href="#">운영정책</a></li>
+          <li><a href="#">청소년보호정책</a></li>
+          <li><a href="#">권리침해신고안내</a></li>
+          <li class="small"><a href="#">공지사항</a></li>
+          <li><a href="#">사이버윤리실</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="copyright">© Taeyeon Corp. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/kakao.js"></script>
+</body>
+
 </html>
