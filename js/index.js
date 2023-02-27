@@ -8,21 +8,6 @@ const listItem1 = contPortfolio[1].querySelector(".list-item ul");
 console.log(listItem);
 let itemCount = 0;
 
-function prev() {
-  if (curPos > 0) {
-    postion += ITEM_WIDTH;
-    list.style.transform = `translateX(${postion}px)`;
-    curPos = curPos - 1;
-  }
-}
-function next() {
-  if (curPos < 3) {
-    postion -= ITEM_WIDTH;
-    list.style.transform = `translateX(${postion}px)`;
-    curPos = curPos + 1;
-  }
-}
-
 // 스와이프 슬라이드
 function swipeSlide(list) {
   let curPos = 0;
