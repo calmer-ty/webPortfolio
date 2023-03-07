@@ -49,6 +49,31 @@ function itemSlide(cont, width) {
     }
   });
 }
+function btnSlide(cont, list) {
+  let curPos = 0;
+  let postion = 0;
+  const ITEM_WIDTH = 590;
+
+  const btnMove = cont.querySelectorAll(".btn-move button");
+
+  btnMove[0].addEventListener("click", prev);
+  btnMove[1].addEventListener("click", next);
+
+  function prev() {
+    if (curPos > 0) {
+      postion += ITEM_WIDTH;
+      list.style.transform = `translateX(${postion}px)`;
+      curPos = curPos - 1;
+    }
+  }
+  function next() {
+    if (curPos < 3) {
+      postion -= ITEM_WIDTH;
+      list.style.transform = `translateX(${postion}px)`;
+      curPos = curPos + 1;
+    }
+  }
+}
 
 function itemSelect(cont) {
   const itemSelector = cont.querySelectorAll(".tab-list li");
