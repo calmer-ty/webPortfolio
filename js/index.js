@@ -15,6 +15,9 @@ function swipeSlide(list) {
   let start_x, end_x;
   const ITEM_WIDTH = 390;
 
+  const itemLi = list.querySelectorAll("li");
+  console.log(itemLi.length);
+
   list.addEventListener("touchstart", touch_start);
   list.addEventListener("touchend", touch_end);
 
@@ -26,7 +29,7 @@ function swipeSlide(list) {
     }
   }
   function next() {
-    if (curPos < 3) {
+    if (curPos < itemLi.length - 1) {
       postion -= ITEM_WIDTH;
       list.style.transform = `translateX(${postion}px)`;
       curPos = curPos + 1;
@@ -50,6 +53,7 @@ function btnSlide(cont, list) {
   let curPos = 0;
   let postion = 0;
   const ITEM_WIDTH = 590;
+  const itemLi = list.querySelectorAll("li");
 
   const btnMove = cont.querySelectorAll(".btn-move button");
 
@@ -64,7 +68,7 @@ function btnSlide(cont, list) {
     }
   }
   function next() {
-    if (curPos < 3) {
+    if (curPos < itemLi.length - 1) {
       postion -= ITEM_WIDTH;
       list.style.transform = `translateX(${postion}px)`;
       curPos = curPos + 1;
