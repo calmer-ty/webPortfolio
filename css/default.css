@@ -35,6 +35,9 @@
   height: 100%;
 }
 /* MARGIN */
+.m40 {
+  margin: 40px;
+}
 .ml20 {
   margin-left: 20px;
 }
@@ -122,6 +125,12 @@
 }
 .italic {
   font-style: italic;
+}
+.fs20 {
+  font-size: 20px;
+}
+.fw-b {
+  font-weight: bold;
 }
 
 /* BUTTON STYLE */
