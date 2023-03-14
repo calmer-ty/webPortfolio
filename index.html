@@ -1,178 +1,202 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPortfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebPortfolio</title>
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/font.css" />
-  <link rel="stylesheet" href="./css/layout.css" />
-  <link rel="stylesheet" href="./css/default.css" />
-  <link rel="stylesheet" href="./css/index.css" />
-</head>
-
-<body>
-  <div id="wrap">
-    <header id="header">
-      <div class="inner">
-        <h1 id="logo">Portfolio</h1>
-        <nav id="gnb">
-          <ul class="menu">
-            <li><a href="#intro">HOME</a></li>
-            <li><a href="#personal">Personal</a></li>
-            <li><a href="#cooperation">Cooperation</a></li>
-          </ul>
-          <div class="btn-lnb">
-            <button class="open">
-              <i class="material-icons">menu</i>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <h1 id="logo">Portfolio</h1>
+          <nav id="gnb">
+            <ul class="menu">
+              <li><a href="#intro">HOME</a></li>
+              <li><a href="#personal">Personal</a></li>
+              <li><a href="#cooperation">Cooperation</a></li>
+            </ul>
+            <div class="btn-lnb">
+              <button class="open">
+                <i class="material-icons">menu</i>
+              </button>
+              <button class="close">
+                <i class="material-icons">close</i>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="cont intro on" id="intro">
+        <div class="inner">
+          <h2><span>Web Publisher</span><span>Taeyeon Kim</span></h2>
+        </div>
+      </div>
+      <!-- Portfolio type1 -->
+      <div class="cont portfolio type1" id="personal">
+        <div class="inner">
+          <h2>Personal</h2>
+          <div class="list-item">
+            <ul class="slide clearfix">
+              <li>
+                <figure>
+                  <a href="./cgv.html" target="_blank">
+                    <img
+                      class="thumb-item"
+                      src="./images/cgv_sample.png"
+                      alt="사이트 샘플 이미지"
+                    />
+                    <div class="cover-item">
+                      <img src="./images/cgv/logo_white.png" alt="" />
+                    </div>
+                  </a>
+                  <figcaption>
+                    <dl>
+                      <dt>CGV</dt>
+                      <dd>CGV 사이트를 클론하여 웹 작업하였습니다.</dd>
+                    </dl>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <a href="./newbalance.html" target="_blank">
+                    <img
+                      class="thumb-item"
+                      src="./images/newbalance_sample.png"
+                      alt="사이트 샘플 이미지"
+                    />
+                    <div class="cover-item">
+                      <img src="./images/newbalance/logo_white.png" alt="" />
+                    </div>
+                  </a>
+                  <figcaption>
+                    <dl>
+                      <dt>뉴발란스</dt>
+                      <dd>뉴발란스 사이트를 클론하여 웹 작업하였습니다.</dd>
+                    </dl>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <a href="./dfy.html" target="_blank">
+                    <img
+                      class="thumb-item"
+                      src="./images/dfy_sample.png"
+                      alt="사이트 샘플 이미지"
+                    />
+                    <div class="cover-item"><span>DFY</span></div>
+                  </a>
+                  <figcaption>
+                    <dl>
+                      <dt>DFY</dt>
+                      <dd>DFY 사이트를 클론하여 웹 작업하였습니다.</dd>
+                    </dl>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <a href="./kakao.html" target="_blank">
+                    <img
+                      class="thumb-item"
+                      src="./images/kakao_sample.png"
+                      alt="사이트 샘플 이미지"
+                    />
+                    <div class="cover-item"><span>kakao</span></div>
+                  </a>
+                  <figcaption>
+                    <dl>
+                      <dt>카카오</dt>
+                      <dd>
+                        레퍼런스 사이트를 참고하여 카카오 웹페이지를
+                        리뉴얼하였습니다.
+                      </dd>
+                    </dl>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-move">
+            <button class="prev">
+              <i class="material-icons">chevron_left</i>
             </button>
-            <button class="close">
-              <i class="material-icons">close</i>
+            <button class="next">
+              <i class="material-icons">chevron_right</i>
             </button>
           </div>
-        </nav>
-      </div>
-    </header>
-    <div class="cont intro on" id="intro">
-      <div class="inner">
-        <h2>
-          <span>Web Publisher</span><span>Taeyeon Kim</span>
-        </h2>
-      </div>
-    </div>
-    <!-- Portfolio type1 -->
-    <div class="cont portfolio type1" id="personal">
-      <div class="inner">
-        <h2>Personal</h2>
-        <div class="list-item">
-          <ul class="slide clearfix">
-            <li>
-              <figure>
-                <a href="./cgv.html" target="_blank">
-                  <img class="thumb-item" src="./images/cgv_sample.png" alt="사이트 샘플 이미지" />
-                  <div class="cover-item"><img src="./images/cgv/logo_white.png" alt=""></div>
-                </a>
-                <figcaption>
-                  <dl>
-                    <dt>CGV</dt>
-                    <dd>CGV 사이트를 클론하여 웹 작업하였습니다.</dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <a href="./newbalance.html" target="_blank">
-                  <img class="thumb-item" src="./images/newbalance_sample.png" alt="사이트 샘플 이미지" />
-                  <div class="cover-item"><img src="./images/newbalance/logo_white.png" alt=""></div>
-                </a>
-                <figcaption>
-                  <dl>
-                    <dt>뉴발란스</dt>
-                    <dd>뉴발란스 사이트를 클론하여 웹 작업하였습니다.</dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <a href="./dfy.html" target="_blank">
-                  <img class="thumb-item" src="./images/dfy_sample.png" alt="사이트 샘플 이미지" />
-                  <div class="cover-item"><span>DFY</span></div>
-                </a>
-                <figcaption>
-                  <dl>
-                    <dt>DFY</dt>
-                    <dd>DFY 사이트를 클론하여 웹 작업하였습니다.</dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <a href="./kakao.html" target="_blank">
-                  <img class="thumb-item" src="./images/kakao_sample.png" alt="사이트 샘플 이미지" />
-                  <div class="cover-item"><span>kakao</span></div>
-                </a>
-                <figcaption>
-                  <dl>
-                    <dt>카카오</dt>
-                    <dd>
-                      레퍼런스 사이트를 참고하여 카카오 웹페이지를
-                      리뉴얼하였습니다.
-                    </dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-        <div class="btn-move">
-          <button class="prev">
-            <i class="material-icons">chevron_left</i>
-          </button>
-          <button class="next">
-            <i class="material-icons">chevron_right</i>
-          </button>
         </div>
       </div>
-    </div>
-    <!-- Portfolio type2 -->
-    <div class="cont portfolio type2" id="cooperation">
-      <div class="inner">
-        <h2>Cooperation</h2>
-        <div class="list-item">
-          <ul class="slide clearfix">
-            <li>
-              <figure>
-                <a href="./dfy.html" target="_blank">
-                  <img class="thumb-item" src="./images/robot/설정_로봇등록_기준 정보 – 3.png" alt="사이트 샘플 이미지" />
-                </a>
-                <figcaption>
-                  <dl>
-                    <dt>로봇 관제 시스템</dt>
-                    <dd>기간 : 22.07 ~ 22.10</dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <a href="./kakao.html" target="_blank">
-                  <img class="thumb-item" src="./images/vit/vision_11.png" alt="사이트 샘플 이미지" />
-                </a>
-                <figcaption>
-                  <dl>
-                    <dt>비앤빛 vision</dt>
-                    <dd>기간 : 22.07 ~ 22.10</dd>
-                  </dl>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-        <div class="btn-move">
-          <button class="prev">
-            <i class="material-icons">chevron_left</i>
-          </button>
-          <button class="next">
-            <i class="material-icons">chevron_right</i>
-          </button>
+      <!-- Portfolio type2 -->
+      <div class="cont portfolio type2" id="cooperation">
+        <div class="inner">
+          <h2>Cooperation</h2>
+          <div class="list-item">
+            <ul class="slide clearfix">
+              <li>
+                <figure>
+                  <a href="./robot-control.html" target="_blank">
+                    <img
+                      class="thumb-item"
+                      src="./images/robot/설정_로봇등록_기준 정보 – 3.png"
+                      alt="사이트 샘플 이미지"
+                    />
+                  </a>
+                  <figcaption>
+                    <dl>
+                      <dt>로봇 관제 시스템</dt>
+                      <dd>기간 : 22.07 ~ 22.10</dd>
+                    </dl>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <a href="./vit-vision.html" target="_blank">
+                    <img
+                      class="thumb-item"
+                      src="./images/vit/vision_11.png"
+                      alt="사이트 샘플 이미지"
+                    />
+                  </a>
+                  <figcaption>
+                    <dl>
+                      <dt>비앤빛 vision</dt>
+                      <dd>기간 : 22.07 ~ 22.10</dd>
+                    </dl>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-move">
+            <button class="prev">
+              <i class="material-icons">chevron_left</i>
+            </button>
+            <button class="next">
+              <i class="material-icons">chevron_right</i>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- <button class="btn scroll-cont up">
+      <!-- <button class="btn scroll-cont up">
       <i class="material-icons">expand_less</i>
     </button>
     <button class="btn scroll-cont down">
       <i class="material-icons">expand_more</i>
     </button> -->
-  </div>
+    </div>
 
-  <script src="./js/nav.js"></script>
-  <script src="./js/index.js"></script>
-</body>
-
+    <script src="./js/nav.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
