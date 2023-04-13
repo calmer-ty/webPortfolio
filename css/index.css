@@ -1,3 +1,9 @@
+#wrap {
+  scroll-snap-type: y mandatory;
+}
+#wrap .cont{
+  scroll-snap-align: center;
+}
 /* INTRO STYLE */
 .cont.intro {
   height: 100vh;
@@ -35,12 +41,14 @@
 .cont.portfolio {
   padding: 200px 100px 100px;
 }
-.cont.portfolio.type1 {
+/* .cont.portfolio.type1 {
   background-color: #efefef;
 }
 .cont.portfolio.type2 {
   background-color: #fefefe;
-}
+} */
+.cont.portfolio[data-box="1"] {background-color: #efefef;}
+
 .cont.portfolio .inner {
   overflow: hidden;
   position: relative;

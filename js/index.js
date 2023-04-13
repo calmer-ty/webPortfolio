@@ -100,68 +100,62 @@ function btnSlide(cont, list) {
 
 // function infoSlide() {
 //   const contInfo = document.querySelectorAll(".cont");
-//   const btnScroll = document.querySelectorAll(".btn.scroll-cont");
-//   const btnNavMenu = document.querySelectorAll("#gnb .menu button");
-//   let pageCount = 0;
+  // const btnScroll = document.querySelectorAll(".btn.scroll-cont");
+  // const btnNavMenu = document.querySelectorAll("#gnb .menu button");
+  // let infoCount = 0;
 
-//   console.log(btnScroll);
 
-//   // 스크롤 올릴 때
-//   function moveUp() {
-//     pageCount--;
-//     if (pageCount < 0) {
-//       pageCount = 0;
-//     }
-//     switchPage();
-//     listItem.style.left = "0px";
-//     listItem1.style.left = "0px";
-//     itemCount = 0;
-//   }
-//   // 스크롤 내릴 때
-//   function moveDown() {
-//     pageCount++;
-//     if (pageCount > contInfo.length - 1) {
-//       pageCount = contInfo.length - 1;
-//     }
-//     switchPage();
-//     listItem.style.left = "0px";
-//     listItem1.style.left = "0px";
-//     itemCount = 0;
-//   }
-//   // 스크롤마다 클래스 추가/제거
-//   function switchPage() {
-//     for (let i = 0; i < contInfo.length; i++) {
-//       if (pageCount !== i) {
-//         contInfo[i].classList.remove("on");
-//       } else if (pageCount === i) {
-//         contInfo[i].classList.add("on");
-//       }
-//     }
-//   }
-//   // 터치로 슬라이드 작동
-//   // document.addEventListener("touchmove", function (event) {
-//   //   if (event.key === "ArrowUp") {
-//   //     moveUp();
-//   //   } else if (event.key === "ArrowDown") {
-//   //     moveDown();
-//   //   }
-//   // });
-//   // 키로 슬라이드 작동
-//   document.addEventListener("keydown", function (event) {
-//     if (event.key === "ArrowUp") {
-//       moveUp();
-//     } else if (event.key === "ArrowDown") {
-//       moveDown();
-//     }
-//   });
-//   // 휠로 슬라이드 작동
-//   // document.addEventListener("wheel", function (event) {
-//   //   if (event.deltaY < 0) {
-//   //     moveUp();
-//   //   } else {
-//   //     moveDown();
-//   //   }
-//   // });
+  // 스크롤 올릴 때
+  // function moveUp() {
+  //   if (infoCount === 0) return;
+  //   infoCount--;
+    // if (infoCount < 0) {
+    //   infoCount = 0;
+    // }
+  // }
+  // 스크롤 내릴 때
+  // function moveDown() {
+  //   if (infoCount > contInfo.length - 2) return;
+  //   infoCount++;
+    // if (infoCount > contInfo.length - 1) {
+    //   infoCount = contInfo.length - 1;
+    // }
+  // }
+  // 스크롤마다 클래스 추가/제거
+  // function switchPage() {
+  //   for (let i = 0; i < contInfo.length; i++) {
+  //     if (infoCount !== i) {
+  //       contInfo[i].classList.remove("on");
+  //     } else if (infoCount === i) {
+  //       contInfo[i].classList.add("on");
+  //     }
+  //   }
+  // }
+
+  // 터치로 슬라이드 작동
+  // document.addEventListener("touchmove", function (event) {
+  //   if (event.key === "ArrowUp") {
+  //     moveUp();
+  //   } else if (event.key === "ArrowDown") {
+  //     moveDown();
+  //   }
+  // });
+  // 키로 슬라이드 작동
+  // document.addEventListener("keydown", function (event) {
+  //   if (event.key === "ArrowUp") {
+  //     moveUp();
+  //   } else if (event.key === "ArrowDown") {
+  //     moveDown();
+  //   }
+  // });
+  // 휠로 슬라이드 작동
+  // document.addEventListener("wheel", function (event) {
+  //   if (event.deltaY > 0) {
+  //     moveDown();
+  //   } else {
+  //     moveUp();
+  //   }
+  // });
 
 //   // document.addEventListener("touchstart", moveUp);
 //   // document.addEventListener("touchend", moveDown);
